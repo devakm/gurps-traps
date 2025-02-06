@@ -120,7 +120,7 @@
           "action": "chatmessage",
           "data": {
             "flavor": "",
-            "text": "/:DetectTraps title=\"AxeTrap\" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 tag=BuxlanTorAxeTrap02",
+            "text": "/:DetectTraps title=\"AxeTrap\" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 tag=BXTAxeTrap02",
             "entity": "",
             "incharacter": false,
             "chatbubble": "true",

@@ -110,7 +110,7 @@
           "action": "chatmessage",
           "data": {
             "flavor": "",
-            "text": "/:DetectTraps title=\"Pitfall Trap\" dice=3d adds=3 type=pi++ armordiv=2 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-8 tag=BuxlanTorSpikeTrap02",
+            "text": "/:DetectTraps title=\"Pitfall Trap\" dice=3d adds=3 type=pi++ armordiv=2 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-8 tag=BXTSpikeTrap02",
             "entity": "",
             "incharacter": false,
             "chatbubble": "false",

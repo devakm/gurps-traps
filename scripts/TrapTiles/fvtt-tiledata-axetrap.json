@@ -36,7 +36,7 @@
     },
     "tagger": {
       "tags": [
-        "TriggeredBuxlanTorAxeTrap02"
+        "TriggeredBXTAxeTrap02"
       ]
     },
     "monks-active-tiles": {
@@ -132,7 +132,7 @@
           "action": "chatmessage",
           "data": {
             "flavor": "",
-            "text": "/:AxeTrap tag=BuxlanTorAxeTrap01",
+            "text": "/:AxeTrap tag=BXTAxeTrap01",
             "entity": "",
             "incharacter": false,
             "chatbubble": "true",
