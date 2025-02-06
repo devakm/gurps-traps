@@ -121,7 +121,7 @@
           "action": "chatmessage",
           "data": {
             "flavor": "",
-            "text": "/:DetectTraps title=\"Caltrops\" dice=thr adds=-2 type=imp armordiv=2 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-2 tag=BuxlanTorCaltrops02",
+            "text": "/:DetectTraps title=\"Caltrops\" dice=thr adds=-2 type=imp armordiv=2 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-2 tag=BXTCaltrops02",
             "entity": "",
             "incharacter": false,
             "chatbubble": "true",
