@@ -1,5 +1,7 @@
 # gurps-traps
-Traps for GURPS Game Aid
+# Traps for GURPS Game Aid
+
+![image](https://github.com/user-attachments/assets/40397bef-8e5f-4cd8-b4ec-737680cca0ee)
 
 Monk's Active Tile Triggers (MATT) makes it possible to handle many traps in Foundry, but the strategy for doing this in GURPS using GGA is sketchy. The typical approach examples given for MATT use an invisible tile "trigger zone" to automatically activate a trap tile and associated animation.
 
@@ -34,4 +36,26 @@ The success and fail outcomes for DetectTraps will either warn the player about 
 
 - `/:EvadeTrap title="${title}" dice=${dice} adds=${adds} type=${type} armordiv=${armorDivisor} attrib=${attribName} difmod=${difMod} skill=${skillName}`
 - `/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${radius} attrib=${attribName} difmod=${difMod}`
+
+For more details, see the [wiki](https://github.com/devakm/gurps-traps/wiki)
+
+## Details
+
+Requires:
+- [GGA 17.17+](https://github.com/crnormand/gurps/tree/main)
+- [Monk's Active Tile Triggrs](https://foundryvtt.com/packages/monks-active-tiles/)
+- [JB2A](https://foundryvtt.com/packages/JB2A_DnD5e)
+- [Sequencer](https://foundryvtt.com/packages/sequencer)
+- [Tagger](https://foundryvtt.com/packages/tagger)
+
+Join us on Discord: [GURPS Foundry-VTT Discord](https://discord.gg/6xJBcYWyED)
+
+Check out my [GURPS Night Vision module](https://github.com/devakm/gurps-night-vision).
+
+#### Legal
+
+As an addon module for GGA, this small script is intended for use with the [GURPS](http://www.sjgames.com/gurps) system from [Steve Jackson Games](ttp://www.sjgames.com). This module is not official and is not endorsed by Steve Jackson Games.
+
+[GURPS](http://www.sjgames.com/gurps) is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. This addon to GGA is released for free distribution, and not for resale, under the permissions granted in the [Steve Jackson Games Online Policy](http://www.sjgames.com/general/online_policy.html)
+
 
