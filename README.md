@@ -13,7 +13,7 @@ The first is a Detection Zone that runs a DetectTraps macro. This works similar 
 
 If DetectTraps is successful as they enter this zone, the player gets a warning and nothing else happens. 
 
-If detection fails, then DetectTraps calls EvadeTrap or ResistEffect along with a Sequencer animation of the trap effect and the Tagger name of the next tile to trigger: the Activation Zone. This tile can only be activated manually because it shares a description of the trap effects, which you can easily tailor in the tile Trigger for the current scene. You can use the default finishing /anim or easily add your own choice. 
+If detection fails, then the trap is triggered. DetectTraps calls EvadeTrap or ResistEffect along with a Sequencer animation of the trap effect and the Tagger name of the next tile to trigger: the Activation Zone. This tile can only be activated manually because it shares a description of the trap effects, which you can easily tailor in the tile Trigger for the current scene. You can use the default finishing /anim or easily add your own choice. 
 
 The format for DetectTraps is:
 `Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> traptag=<trapTag>`
