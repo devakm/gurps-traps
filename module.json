@@ -1,0 +1,43 @@
+{
+  "title": "Traps for GURPS Game Aid",
+  "description": "A generic system for traps in GGA using Monk's Active Tile Triggers (MATT).",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "devakm",
+      "discord": "urikslargda.devakm",
+      "url": "https://github.com/devakm",
+      "flags": {}
+    }
+  ],
+  "url": "https://github.com/devakm/gurps-traps",
+  "manifest": "https://github.com/devakm/gurps-traps/releases/latest/download/module.json",
+  "download": "https://github.com/devakm/gurps-traps/releases/download/0.1.0/module.zip",
+  "id": "gurps-traps",
+  "relationships": {
+    "systems": [
+      {
+        "id": "gurps",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "packs": [
+    {
+      "name": "traps",
+      "label": "Trap Macros",
+      "path": "packs/traps",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "gurps"
+    }
+  ]
+}
