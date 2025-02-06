@@ -1,0 +1,170 @@
+{
+  "width": 281,
+  "height": 357,
+  "x": 1857,
+  "y": 2274,
+  "rotation": 0,
+  "alpha": 0.1,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false,
+      "noCollision": false,
+      "allWallBlockSight": true
+    },
+    "betterroofs": {
+      "brMode": false,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {
+      "tags": [
+        "BXTAxeTrap02"
+      ]
+    },
+    "monks-active-tiles": {
+      "active": true,
+      "record": false,
+      "restriction": "all",
+      "controlled": "all",
+      "trigger": [
+        "manual"
+      ],
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "distance",
+          "data": {
+            "entity": {
+              "id": "token",
+              "name": "Triggering Token"
+            },
+            "measure": "lte",
+            "distance": {
+              "value": 1,
+              "var": "sq"
+            },
+            "continue": "within",
+            "from": "edge"
+          },
+          "id": "ghlCJ08zSItwU9bU"
+        },
+        {
+          "action": "exists",
+          "data": {
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "collection": "tokens",
+            "count": "> 0",
+            "none": ""
+          },
+          "id": "T1YTDH39VJJpF54o"
+        },
+        {
+          "action": "target",
+          "data": {
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "location": {},
+            "remotesnap": true,
+            "animatepan": false,
+            "deletesource": false,
+            "preservesettings": true,
+            "avoidtokens": false,
+            "item": {},
+            "actor": {},
+            "token": {},
+            "target": "add",
+            "for": "trigger"
+          },
+          "id": "tPEBqk1rTPlI7kW3"
+        },
+        {
+          "action": "runmacro",
+          "data": {
+            "entity": {
+              "id": "Macro.8ENgVTnnuwezapNR",
+              "name": "PickMe"
+            },
+            "args": "",
+            "runasgm": "player"
+          },
+          "id": "dKfPTeexEl5LfE7p"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "/:DetectTraps title=\"AxeTrap\" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 tag=BuxlanTorAxeTrap02",
+            "entity": "",
+            "incharacter": false,
+            "chatbubble": "true",
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "VQUSg5bv6I3YG28T"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 1,
+      "files": [],
+      "name": "",
+      "vision": false,
+      "cooldown": null
+    },
+    "exportSource": {
+      "world": "ur6",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.17"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/trap.svg",
+    "tint": "#ffffff",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "fit": "fill",
+    "alphaThreshold": 0.75
+  },
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "elevation": 0,
+  "id": "luYfUiCsuszMhxEJ",
+  "name": "DetectTrapsAxeTrap",
+  "visible": true,
+  "img": "icons/svg/trap.svg",
+  "thumbnail": "icons/svg/trap.svg"
+}
