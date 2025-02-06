@@ -36,7 +36,7 @@
     },
     "tagger": {
       "tags": [
-        "TriggeredBuxlanTorAxeTrap02"
+        "TriggeredBXAxeTrap02"
       ]
     },
     "monks-active-tiles": {
@@ -162,7 +162,7 @@
       }
     },
     "exportSource": {
-      "world": "ur6",
+      "world": "YourWorld",,
       "system": "gurps",
       "coreVersion": "12.331",
       "systemVersion": "0.17.17"
