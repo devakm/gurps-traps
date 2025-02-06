@@ -1,0 +1,194 @@
+{
+  "width": 413,
+  "height": 325,
+  "x": 5369,
+  "y": 1662,
+  "rotation": 0,
+  "alpha": 0.1,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false,
+      "noCollision": false,
+      "allWallBlockSight": true
+    },
+    "betterroofs": {
+      "brMode": false,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {
+      "tags": [
+        "TriggeredBuxlanTorAxeTrap02"
+      ]
+    },
+    "monks-active-tiles": {
+      "active": true,
+      "record": true,
+      "restriction": "all",
+      "controlled": "all",
+      "trigger": [
+        "manual"
+      ],
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "distance",
+          "data": {
+            "entity": {
+              "id": "token",
+              "name": "Triggering Token"
+            },
+            "measure": "lt",
+            "distance": {
+              "value": 1,
+              "var": "sq"
+            },
+            "from": "center",
+            "continue": "within"
+          },
+          "id": "xd9USh6Xn9oqABsl"
+        },
+        {
+          "action": "exists",
+          "data": {
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "collection": "tokens",
+            "count": "> 0",
+            "none": ""
+          },
+          "id": "kryRYnm8LUJS7nAt"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "Trap!",
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "incharacter": true,
+            "chatbubble": "true",
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "gudNHDYYVMlWzDte"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "<h3>Something sharp on the floor stabs into your foot.</h3>",
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "incharacter": false,
+            "chatbubble": "true",
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "VOTO15L5HopbNkmX"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "!/anim Caltrops01_01_Regular_Grey c *0.3 @self",
+            "entity": "",
+            "incharacter": false,
+            "chatbubble": "true",
+            "language": "",
+            "showto": "gm"
+          },
+          "id": "i6x2gXYyWFmmkoaI"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 0,
+      "files": [],
+      "name": "",
+      "vision": false,
+      "cooldown": null,
+      "history": {
+        "mtOpWV1uvsQtk37E": {
+          "tokenid": "mtOpWV1uvsQtk37E",
+          "triggered": [
+            {
+              "id": "BXE3C90dSjjys3cp",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738474608615
+            },
+            {
+              "id": "M1mQrtzPpTlGXEDB",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738474679871
+            },
+            {
+              "id": "piursNb7zPogq2wl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738475180293
+            }
+          ]
+        }
+      }
+    },
+    "exportSource": {
+      "world": "YourWorld",,
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.17"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/target.svg",
+    "tint": "#ffffff",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "fit": "fill",
+    "alphaThreshold": 0.75
+  },
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "elevation": 0,
+  "id": "qUh5HrcLru1f4cN1",
+  "name": "TrapEffectCaltrops",
+  "visible": true,
+  "img": "icons/svg/target.svg",
+  "thumbnail": "icons/svg/target.svg"
+}
