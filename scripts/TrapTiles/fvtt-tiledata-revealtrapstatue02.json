@@ -1,0 +1,340 @@
+{
+  "width": 66,
+  "height": 56,
+  "rotation": 0,
+  "alpha": 0.9,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false,
+      "noCollision": false,
+      "allWallBlockSight": true
+    },
+    "betterroofs": {
+      "brMode": false,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {
+      "tags": [
+        "RevealBXTrapStatue02"
+      ]
+    },
+    "monks-active-tiles": {
+      "active": true,
+      "record": true,
+      "restriction": "all",
+      "controlled": "gm",
+      "trigger": [
+        "dblclick"
+      ],
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "trigger",
+          "data": {
+            "entity": {
+              "id": "Scene.Q3UUE5okG8c71U0T.Tile.Au0AhCIViafeztXd",
+              "name": "Tile: Au0AhCIViafeztXd"
+            },
+            "token": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "return": false
+          },
+          "id": "MgAuWEe4YDOllCpy"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 0,
+      "files": [],
+      "history": {
+        "": {
+          "tokenid": "",
+          "triggered": [
+            {
+              "id": "25I4kuBSbO25qR03",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524549090
+            },
+            {
+              "id": "slmUH3cRw6U1CCeL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524590383
+            },
+            {
+              "id": "NWiFy79w6eyZvlTB",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524726008
+            },
+            {
+              "id": "7gQP7vw9j3tKm12S",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524801337
+            },
+            {
+              "id": "xnOkqGSnDGTV4zaQ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524889778
+            },
+            {
+              "id": "LFGR4KXrmmz7z5bF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524899834
+            },
+            {
+              "id": "ssU5DamYQFzaJnVW",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724525070407
+            },
+            {
+              "id": "1Qfdh9WW8rSdKJiG",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724619705761
+            },
+            {
+              "id": "8XcF7gZlsvcB04EN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724619744075
+            },
+            {
+              "id": "pOAOEwuczdmo3jCY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724620093040
+            },
+            {
+              "id": "nxlhq5ASqbpPJEOL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725158136035
+            },
+            {
+              "id": "bifNohHHEK2eu372",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725158700290
+            },
+            {
+              "id": "bhAz3SKH4lNBtjU6",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725159434340
+            },
+            {
+              "id": "dbG18ivKvVdUhdw5",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725159624119
+            },
+            {
+              "id": "FdIUVLzJyDTXymn7",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725160879841
+            },
+            {
+              "id": "3L1RoJA4OmZ1Bfu4",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1725161002519
+            },
+            {
+              "id": "zhjwkZVJDJWKNi8I",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725161226051
+            },
+            {
+              "id": "zfo7gCgY1fhBCYbw",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725161778209
+            },
+            {
+              "id": "TBLVIPV5ayZmNtb2",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725162299191
+            },
+            {
+              "id": "Naq4qX6vDisopBFw",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725162736421
+            },
+            {
+              "id": "5ACPxkcIeZnVjMLd",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725163802017
+            },
+            {
+              "id": "AaaFT0ZvDponeyMv",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725164010342
+            },
+            {
+              "id": "3FhrKdlJfwGeB7om",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1725166394027
+            }
+          ]
+        },
+        "FQXBKd2S4RqtDdKR": {
+          "tokenid": "FQXBKd2S4RqtDdKR",
+          "triggered": [
+            {
+              "id": "b8SMsqyqB7Ig2Oaj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724524785434
+            },
+            {
+              "id": "FdetQS74s5dNMRSR",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724525247842
+            },
+            {
+              "id": "GdtSS0YJveceQ4rI",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724525419785
+            }
+          ]
+        },
+        "p7WQ2bKrd1Ph7eIj": {
+          "tokenid": "p7WQ2bKrd1Ph7eIj",
+          "triggered": [
+            {
+              "id": "nIjePaZ6iH3vT2xq",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724617901174
+            },
+            {
+              "id": "vkowJbp8gPcaNiHF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724618788861
+            },
+            {
+              "id": "quZ8YKoixwUsRskt",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724621193811
+            }
+          ]
+        },
+        "x4KT5djBTVyWCqew": {
+          "tokenid": "x4KT5djBTVyWCqew",
+          "triggered": [
+            {
+              "id": "OUZNzOIz3SMmaiRj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724623536259
+            }
+          ]
+        },
+        "_blank": {
+          "tokenid": "_blank",
+          "triggered": [
+            {
+              "id": "VPNM2IEwiZ8n7rG8",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1738525651282
+            }
+          ]
+        },
+        "DaMUZHHK95UPwU7Z": {
+          "tokenid": "DaMUZHHK95UPwU7Z",
+          "triggered": [
+            {
+              "id": "FIPAhMZqdZYJ0OdP",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738525651282
+            },
+            {
+              "id": "3qYf8jrKBeKL9iUv",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738526050726
+            },
+            {
+              "id": "Y3G1BXuzYv4HDjsM",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738526395294
+            }
+          ]
+        },
+        "DIjkWig1LEr9cHI8": {
+          "tokenid": "DIjkWig1LEr9cHI8",
+          "triggered": [
+            {
+              "id": "1XO0PWCkFvjfffhZ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738900660138
+            },
+            {
+              "id": "Zf1FTxHh5kzsdL6o",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1738901168568
+            }
+          ]
+        }
+      },
+      "name": "",
+      "vision": false,
+      "cooldown": null
+    },
+    "exportSource": {
+      "world": "YourWorld",,
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.17"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/eye.svg",
+    "tint": "#ffffff",
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "offsetX": 0,
+    "offsetY": 0,
+    "fit": "fill",
+    "scaleX": 1,
+    "scaleY": 1,
+    "rotation": 0,
+    "alphaThreshold": 0.75
+  },
+  "elevation": 0,
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "id": "65PRTYcuqPX9FN60",
+  "name": "RevealTrapStatue02",
+  "visible": true,
+  "img": "icons/svg/eye.svg",
+  "thumbnail": "icons/svg/eye.svg"
+}
