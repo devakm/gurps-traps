@@ -1,0 +1,229 @@
+{
+  "width": 66,
+  "height": 56,
+  "rotation": 0,
+  "alpha": 0.9,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false
+    },
+    "betterroofs": {
+      "brMode": 2,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {
+      "tags": ""
+    },
+    "monks-active-tiles": {
+      "active": true,
+      "record": true,
+      "restriction": "all",
+      "controlled": "gm",
+      "trigger": "dblclick",
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "Trap!",
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "incharacter": true,
+            "chatbubble": true,
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "fUzbcl3AFj1Y2NRw"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "<h3>Suddenly, you feel a small click from the floor beneath your feet.\n\nThe statue’s bearded face slides open, rather like an oversized nutcracker, and greenish gas billows forth!</h3>",
+            "entity": "",
+            "incharacter": false,
+            "chatbubble": false,
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "rDGCCFKMI6YZlT3b"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 0,
+      "files": [],
+      "history": {
+        "": {
+          "tokenid": "",
+          "triggered": [
+            {
+              "id": "25I4kuBSbO25qR03",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524549090
+            },
+            {
+              "id": "slmUH3cRw6U1CCeL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524590383
+            },
+            {
+              "id": "NWiFy79w6eyZvlTB",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524726008
+            },
+            {
+              "id": "7gQP7vw9j3tKm12S",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524801337
+            },
+            {
+              "id": "xnOkqGSnDGTV4zaQ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524889778
+            },
+            {
+              "id": "LFGR4KXrmmz7z5bF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524899834
+            },
+            {
+              "id": "ssU5DamYQFzaJnVW",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724525070407
+            },
+            {
+              "id": "1Qfdh9WW8rSdKJiG",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724619705761
+            },
+            {
+              "id": "8XcF7gZlsvcB04EN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724619744075
+            },
+            {
+              "id": "pOAOEwuczdmo3jCY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724620093040
+            }
+          ]
+        },
+        "FQXBKd2S4RqtDdKR": {
+          "tokenid": "FQXBKd2S4RqtDdKR",
+          "triggered": [
+            {
+              "id": "b8SMsqyqB7Ig2Oaj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724524785434
+            },
+            {
+              "id": "FdetQS74s5dNMRSR",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724525247842
+            },
+            {
+              "id": "GdtSS0YJveceQ4rI",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724525419785
+            }
+          ]
+        },
+        "p7WQ2bKrd1Ph7eIj": {
+          "tokenid": "p7WQ2bKrd1Ph7eIj",
+          "triggered": [
+            {
+              "id": "nIjePaZ6iH3vT2xq",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724617901174
+            },
+            {
+              "id": "vkowJbp8gPcaNiHF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724618788861
+            },
+            {
+              "id": "quZ8YKoixwUsRskt",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724621193811
+            }
+          ]
+        },
+        "x4KT5djBTVyWCqew": {
+          "tokenid": "x4KT5djBTVyWCqew",
+          "triggered": [
+            {
+              "id": "OUZNzOIz3SMmaiRj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "dblclick",
+              "when": 1724623536259
+            }
+          ]
+        }
+      }
+    },
+    "exportSource": {
+      "world": "YourWorld",,
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.17"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/biohazard.svg",
+    "tint": "#ffffff",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "fit": "fill",
+    "alphaThreshold": 0.75
+  },
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "elevation": 0,
+  "id": "QBQhu7Ukx0XIcY79",
+  "name": "TrapDescription",
+  "visible": true,
+  "img": "icons/svg/biohazard.svg",
+  "thumbnail": "icons/svg/biohazard.svg"
+}
