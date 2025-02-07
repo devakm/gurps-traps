@@ -3,9 +3,7 @@
 
 ![image](https://github.com/user-attachments/assets/40397bef-8e5f-4cd8-b4ec-737680cca0ee)
 
-Monk's Active Tile Triggers (MATT) makes it possible to handle many traps in Foundry, but the strategy for doing this in GURPS using GGA is sketchy. The typical approach examples given for MATT use an invisible tile "trigger zone" to automatically activate a trap tile and associated animation.
-
-This simple approach works of course, but is less than ideal for GURPS since it bypasses any normal perception checks and evasion. Ideally, you want to give the hapless adventurer a chance to detect the trap before it gets triggered, and evade it if they failed to detect it.
+Monk's Active Tile Triggers (MATT) makes it possible to handle many traps in Foundry, but the strategy for doing this in GURPS using GGA is less obvious. The typical approach examples given for MATT use an invisible tile "trigger zone" to automatically activate a trap tile and associated animation. This simple approach works of course, but is less than ideal for GURPS since it bypasses any normal perception checks and evasion. Ideally, you want to give the hapless adventurer a chance to detect the trap before it gets triggered, and evade it if they failed to detect it.
 
 One approach I have used with some success is to link several hidden "zone" tiles together using MATT and a basic Tagger naming scheme for the tiles.  
 
