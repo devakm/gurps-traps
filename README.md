@@ -12,7 +12,7 @@ If DetectTraps is successful as they enter this zone, the player gets a warning 
 If DetectTraps fails, then the trap is triggered. DetectTraps calls EvadeTrap or ResistEffect along with a Sequencer animation of the trap effect and the Tagger name of the next tile to trigger: the Activation Zone. This tile is activated manually because it shares a description of the trap effects, which you can easily tailor in the tile Trigger for the current scene. 
 
 The format for DetectTraps is:
-`Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> traptag=<trapTag>`
+`/:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> traptag=<trapTag>`
 -   Title - name to display on dialog; usually the type of trap, such as "Spike Trap", "Caltrops", "Pitfall Trap", "Poison Gas", "YellowMold", "AlchemistFire", etc.
 -   Dice - dice of damage
 -   Adds - modifier to each die of damage, zero if none
