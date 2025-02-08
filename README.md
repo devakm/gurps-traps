@@ -50,7 +50,7 @@ Check out my [GURPS Night Vision module](https://github.com/devakm/gurps-night-v
 
 #### Legal
 
-As an addon module for GGA, this small script is intended for use with the [GURPS](http://www.sjgames.com/gurps) system from [Steve Jackson Games](ttp://www.sjgames.com). This module is not official and is not endorsed by Steve Jackson Games.
+As an addon module for GURPS Game Aid (GGA), this small script collection is my own creation intended for use with the [GURPS](http://www.sjgames.com/gurps) system from [Steve Jackson Games](ttp://www.sjgames.com). This module is not official and is not endorsed by Steve Jackson Games.
 
 [GURPS](http://www.sjgames.com/gurps) is a trademark of Steve Jackson Games, and its rules and art are copyrighted by Steve Jackson Games. All rights are reserved by Steve Jackson Games. This addon to GGA is released for free distribution, and not for resale, under the permissions granted in the [Steve Jackson Games Online Policy](http://www.sjgames.com/general/online_policy.html)
 
