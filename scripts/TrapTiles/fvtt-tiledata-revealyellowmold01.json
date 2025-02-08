@@ -1,0 +1,270 @@
+{
+  "width": 375,
+  "height": 325,
+  "rotation": 0,
+  "alpha": 0.1,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false,
+      "noCollision": false,
+      "allWallBlockSight": true
+    },
+    "betterroofs": {
+      "brMode": false,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {},
+    "monks-active-tiles": {
+      "active": true,
+      "record": true,
+      "restriction": "all",
+      "controlled": "all",
+      "trigger": [
+        "manual"
+      ],
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "distance",
+          "data": {
+            "entity": {
+              "id": "within",
+              "name": "Tokens within Tile"
+            },
+            "measure": "lte",
+            "distance": {
+              "value": 1,
+              "var": "sq"
+            },
+            "continue": "within"
+          },
+          "id": "ghlCJ08zSItwU9bU"
+        },
+        {
+          "action": "target",
+          "data": {
+            "entity": {},
+            "location": {},
+            "remotesnap": true,
+            "animatepan": false,
+            "deletesource": false,
+            "preservesettings": true,
+            "avoidtokens": false,
+            "item": {},
+            "actor": {},
+            "token": {},
+            "target": "add",
+            "for": "token"
+          },
+          "id": "tPEBqk1rTPlI7kW3"
+        },
+        {
+          "action": "exists",
+          "data": {
+            "entity": "",
+            "collection": "tokens",
+            "count": "> 0",
+            "none": "end"
+          },
+          "id": "DWAhC20ilNMa8sCo"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "Trap!",
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "incharacter": true,
+            "chatbubble": true,
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "gudNHDYYVMlWzDte"
+        },
+        {
+          "action": "chatmessage",
+          "data": {
+            "flavor": "",
+            "text": "<h3>A cloud of yellow mold spores suddenly fills the area!</h3>",
+            "entity": {
+              "id": "previous",
+              "name": "Current tokens"
+            },
+            "incharacter": false,
+            "chatbubble": "false",
+            "language": "",
+            "showto": "everyone"
+          },
+          "id": "VOTO15L5HopbNkmX"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 0,
+      "files": [],
+      "history": {
+        "": {
+          "tokenid": "",
+          "triggered": [
+            {
+              "id": "n5bL4u5wqLeqyBMW",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727746931768
+            },
+            {
+              "id": "b0KNhBJ64tfn0Qd6",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727750425119
+            },
+            {
+              "id": "GtEV3W2xJ1dDufif",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727750556594
+            },
+            {
+              "id": "pUtj937mO1R2GQdf",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727750590014
+            },
+            {
+              "id": "ox613MWa0Gn4uoor",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727750778754
+            },
+            {
+              "id": "pRoxmhU1Yd8SQsc2",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727750855541
+            },
+            {
+              "id": "j3XLrwd9NV5I4p1I",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1727751287410
+            }
+          ]
+        },
+        "H2kSkRLjBp3YvW83": {
+          "tokenid": "H2kSkRLjBp3YvW83",
+          "triggered": [
+            {
+              "id": "XxcEGanpAXxVgdJv",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727746931768
+            },
+            {
+              "id": "PuzqrRgvXk1ekZF0",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727750425120
+            },
+            {
+              "id": "5k2B6z6I6D5KqPz9",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727750855541
+            },
+            {
+              "id": "JVJVoxH7qAmCIyKn",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727751287410
+            },
+            {
+              "id": "hZkcFzl8jMG5U63Z",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727841463252
+            },
+            {
+              "id": "WcSF5bA8uU8oZVRk",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728176581246
+            }
+          ]
+        },
+        "puoew53EZUjbnoXF": {
+          "tokenid": "puoew53EZUjbnoXF",
+          "triggered": [
+            {
+              "id": "XpiiwHwAkDYCyzGp",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727750556594
+            },
+            {
+              "id": "DAbr0YCIvFdmpGi8",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727750590014
+            },
+            {
+              "id": "68ANkQCK2YrFFofk",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1727750778754
+            }
+          ]
+        }
+      },
+      "name": "RevealYellowMold",
+      "vision": false,
+      "cooldown": null
+    },
+    "exportSource": {
+      "world": "YourWorld",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.17"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/target.svg",
+    "tint": "#ffffff",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "fit": "fill",
+    "alphaThreshold": 0.75
+  },
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "elevation": 0,
+  "id": "0uHkLwdZsmPuFJno",
+  "name": "RevealYellowMold01",
+  "visible": true,
+  "img": "icons/svg/target.svg",
+  "thumbnail": "icons/svg/target.svg"
+}
