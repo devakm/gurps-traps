@@ -14,7 +14,7 @@ If DetectTraps fails, then the trap is triggered. DetectTraps calls EvadeTrap or
 The format for DetectTraps is:
 `Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> traptag=<trapTag>`
 -   Title - name to display on dialog; usually the type of trap, such as "Spike Trap", "Caltrops", "Pitfall Trap", "Poison Gas", "YellowMold", "AlchemistFire", etc.
--   Dice - dice of damage per energy point; may be a fraction
+-   Dice - dice of damage
 -   Adds - modifier to each die of damage, zero if none
 -   Type - Damage type (cr, cut, burn, etc...)
 -   Divisor - Reduce DR by (x)
