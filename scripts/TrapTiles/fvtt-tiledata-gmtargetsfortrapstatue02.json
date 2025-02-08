@@ -577,7 +577,7 @@
       "cooldown": null
     },
     "exportSource": {
-      "world": "YourWorld",,
+      "world": "YourWorld",
       "system": "gurps",
       "coreVersion": "12.331",
       "systemVersion": "0.17.17"
