@@ -3,15 +3,13 @@
 
 ![image](https://github.com/user-attachments/assets/40397bef-8e5f-4cd8-b4ec-737680cca0ee)
 
-Monk's Active Tile Triggers (MATT) makes it possible to handle many traps in Foundry, but the strategy for doing this in GURPS using GGA is less obvious. The typical approach examples given for MATT use an invisible tile "trigger zone" to automatically activate a trap tile and associated animation. This simple approach works of course, but is less than ideal for GURPS since it bypasses any normal perception checks and evasion. Ideally, you want to give the hapless adventurer a chance to detect the trap before it gets triggered, and evade it if they failed to detect it.
+Traps for GGA is a collection of scripts to help with defining how traps behave and tile templates to make custom trap creation as easily repeatable as possible.
 
-One approach I have used with some success is to link several hidden "zone" tiles together using MATT and a basic Tagger naming scheme for the tiles.  
-
-The first is a Detection Zone that runs a DetectTraps macro. This works similar to the classic SpellDamage macro for GGA and is triggered by a MATT Chat Message containing GURPS-style trap details so that many different trap configurations can be handled. 
+The scripts are triggered by hidden tiles created with Monk's Active Tile Triggers (MATT) and linked together using Tagger. The first template creates a detection zone that runs the DetectTraps macro on Enter. This works similar to the classic SpellDamage macro for GGA and is triggered by a MATT Chat Message containing GURPS-style trap details so that many different trap configurations can be handled. 
 
 If DetectTraps is successful as they enter this zone, the player gets a warning and nothing else happens. 
 
-If detection fails, then the trap is triggered. DetectTraps calls EvadeTrap or ResistEffect along with a Sequencer animation of the trap effect and the Tagger name of the next tile to trigger: the Activation Zone. This tile can only be activated manually because it shares a description of the trap effects, which you can easily tailor in the tile Trigger for the current scene. You can use the default finishing /anim or easily add your own choice. 
+If DetectTraps fails, then the trap is triggered. DetectTraps calls EvadeTrap or ResistEffect along with a Sequencer animation of the trap effect and the Tagger name of the next tile to trigger: the Activation Zone. This tile is activated manually because it shares a description of the trap effects, which you can easily tailor in the tile Trigger for the current scene. 
 
 The format for DetectTraps is:
 `Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> traptag=<trapTag>`
