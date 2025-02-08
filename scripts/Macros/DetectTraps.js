@@ -1,14 +1,4 @@
-/* Usage: DetectTraps
-   Lets you auto-detect a trap; doesn't yet consider active searching
-   Defauls are DX and Jumping
-   Basic OtF formula concept
-   ["Evade Deadly Spike Trap DX-8"/r [DX-8] {You Evade!} {[2d tox]}]
-   
-   Requirements: DetectTraps, EvadeTrap, ResistEffect
-   Optional: PoisonSpray, YellowMoldSpores, AlchemistFire, SpikeTrap100x100px, SpikeTrap160x160px
-   Add your own special effects to this recipe book.
-
- Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> adiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> tag=<trapTileTag>
+/*  Usage: /:DetectTraps title="<title>"" dice=<dice> adds=<adds> type=<type> adiv=<divisor> rsize=<rsize> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> tag=<trapTileTag>
    Title - name to display on dialog
    Dice - dice of damage per energy point; may be a fraction
    Adds - modifier to each die of damage, zero if none
@@ -21,20 +11,25 @@
    Detect Difficulty - Difficulty to detect trap; default to trap difficulty
    Trap Tile Tag - Tagger tag name for the tile to trigger, default to SpikeTrap01
   
+   DetectTraps lets you auto-detect a trap;
+   Required Macros: DetectTraps, EvadeTrap, ResistEffect
+   Optional Macros: PoisonSpray, YellowMoldSpores, AlchemistFire, SpikeTrap100x100px, SpikeTrap160x160px
+   Add your own special effects to this recipe book.
+
  Example chat commands to use in MATT for various trap types (adjust to fit your own trap designs):
-    /:DetectTraps title="AxeTrap" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 
+    /:DetectTraps title="AxeTrap" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 tag=DungeonCave01AxeTrap01
     /:DetectTraps title="Caltrops" dice=1 adds=0 type=thr armordiv=0 attrib=DX difmod=-2 skill=Acrobatics detectwith=!PER! detectdif=-2 tag=DungeonCave05Caltrops01
-    /:DetectTraps title="AlchemistFire" dice=4 adds=4 type=burn armordiv=5 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-8 tag=BXTrapStatue05
-    /:DetectTraps title="YellowMold" dice=2 adds=3 type=tox armordiv=3 attrib=HT difmod=-6 skill=Jumping detectwith=!PER! detectdif=-6 tag=BXTrapStatue01
-    /:DetectTraps title="Poison" dice=1 adds=9 type=tox armordiv=3 attrib=HT difmod=-6 skill=Jumping detectwith=!PER! detectdif=-8 tag=DungeonCave05TrapStatue03
-	/:DetectTraps title="Spike Trap" dice=1 adds=9 type=imp rsize=3 attrib=DX detectdif=-6 skill=Acrobatics detectwith=!PER! tag=SpikeTrap01
-	/:DetectTraps title="Pitfall Trap" dice=3 adds=6 type=pi++ rsize=2 attrib=DX detectdif=-6 skill=Jumping detectwith=!PER! tag=PitfallTrap01
-	/:DetectTraps title="AlchemistFire" dice=4 adds=4 type=burn rsize=3 attrib=DX difmod=-6 skill=Jumping detectwith=!PER! detectdif=-8 tag=BXTrapStatue05
+    /:DetectTraps title="AlchemistFire" dice=4 adds=4 type=burn armordiv=5 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! detectdif=-8 tag=DungeonCave01rapStatue05
+    /:DetectTraps title="YellowMold" dice=2 adds=3 type=tox armordiv=3 attrib=HT difmod=-6 skill=Jumping detectwith=!PER! detectdif=-6 tag=DungeonCave01rapStatue01
+    /:DetectTraps title="Poison" dice=1 adds=9 type=tox armordiv=3 attrib=HT difmod=-3 skill=Jumping detectwith=!PER! detectdif=-8 tag=DungeonCave05TrapStatue03
+	/:DetectTraps title="Spike Trap" dice=1 adds=9 type=imp rsize=3 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! tag=SpikeTrap01
+	/:DetectTraps title="Pitfall Trap" dice=3 adds=6 type=pi++ rsize=2 attrib=DX difmod=-4 skill=Jumping detectwith=!PER! tag=PitfallTrap01
+	/:DetectTraps title="AlchemistFire" dice=4 adds=4 type=burn rsize=3 attrib=DX difmod=-5 skill=Jumping detectwith=!PER! detectdif=-8 tag=DungeonCave01rapStatue05
 
 Evade example:
-    /:EvadeTrap title="Spike Trap" dice=1 adds=9 type=imp rsize=3 attrib=DX detectdif=-6 skill=Acrobatics detectwith=!PER! tag=SpikeTrap01
-    /:EvadeTrap title="Pitfall Trap" dice=3 adds=3 type=pi++ rsize=2 attrib=DX detectdif=-2 skill=Acrobatics detectwith=!PER! tag=PitfallTrap01
-	/:EvadeTrap title="AlchemistFire" dice=4 adds=4 type=burn rsize=3 attrib=DX difmod=-6 skill=Jumping detectwith=!PER! detectdif=-8 tag=BXTrapStatue05
+    /:EvadeTrap title="Spike Trap" dice=1 adds=9 type=imp rsize=3 attrib=DX difmod=-6 skill=Acrobatics detectwith=!PER! tag=SpikeTrap01
+    /:EvadeTrap title="Pitfall Trap" dice=3 adds=3 type=pi++ rsize=2 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! tag=PitfallTrap01
+	/:EvadeTrap title="AlchemistFire" dice=4 adds=4 type=burn rsize=3 attrib=DX difmod=-5 skill=Jumping detectwith=!PER! detectdif=-8 tag=DungeonCave01rapStatue05
 
   Difficulty Examples:
 	- Evade Crude "Spike Trap" DX+2
@@ -154,9 +149,9 @@ evadeTrapsCfOtF =`/:EvadeTrap title="${title}" dice=${dice} adds=${adds} type=${
 resistTrapsOtF = `/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${radius} attrib=${attribName} difmod=${difMod}`;
 resistTrapsCfOtF = `/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${radius} attrib=${attribName} difmod=${critFailDifMod}`;
 
-// Add recipies for special trap effects here
+// Add recipes for special trap effects here
 if (title.includes('Poison') == true) {
-	///:ResistEffect Poison 1d 9 tox 3 HT -6]        /:DetectTraps Poison 1d 9 tox 3 HT -6 Jumping !PER! -8 BXTrapStatue01
+	///:ResistEffect Poison 1d 9 tox 3 HT -6]        /:DetectTraps Poison 1d 9 tox 3 HT -6 Jumping !PER! -8 DungeonCave01rapStatue01
 	failTrapsOtF = `/:PoisonSpray tag=${trapTag} \\\\${resistTrapsOtF}`;
 	critFailTrapsOtF = `/:PoisonSpray tag=${trapTag} \\\\${resistTrapsCfOtF}`;
 	console.log(`Poison: ResistEffect;`);
@@ -171,7 +166,7 @@ if (title.includes('Poison') == true) {
 	console.log(`failTrapsOtF: ${failTrapsOtF}`);
 	console.log(`critFailTrapsOtF: ${critFailTrapsOtF}`);
 } else if (title.includes('AlchemistFire') == true) {
-	///:ResistEffect AlchemistFire 1d 9 tox 3 HT -6]        /:DetectTraps "AlchemistFire" 4d 4 burn 5 DX -6 Acrobatics -8 BXTrapStatue05
+	///:ResistEffect AlchemistFire 1d 9 tox 3 HT -6]        /:DetectTraps "AlchemistFire" 4d 4 burn 5 DX -6 Acrobatics -8 DungeonCave01rapStatue05
 	failTrapsOtF = `/:AlchemistFire tag=${trapTag} \\\\${evadeTrapsOtF}`;
 	critFailTrapsOtF = `/:AlchemistFire tag=${trapTag} \\\\${evadeTrapsCfOtF}`;
 	console.log(`AlchemistFire: EvadeTrap;`); // switch to ResistEffect by using resistTrapsOtF instead of evadeTrapsCfOtF
@@ -191,16 +186,16 @@ if (title.includes('Poison') == true) {
 	console.log(`Physical EvadeTrap: ${title};`);
 	console.log(`failTrapsOtF: ${failTrapsOtF}`);
 	console.log(`critFailTrapsOtF: ${critFailTrapsOtF}`);
-	//game.macros.getName('TriggerActiveTile').execute({tag: trapTag, victim: _token.id}); // TriggeredBXTAxeTrap01
+	//game.macros.getName('TriggerActiveTile').execute({tag: trapTag, victim: _token.id}); // TriggeredDungeonCave01AxeTrap01
 } else {
     console.log(`Physical EvadeTrap: ${title}; trapTag: ${trapTag}`);
-	if (trapTag == 'BXTSpikeTrap03') {
+	if (trapTag == 'DungeonCave01SpikeTrap03') {
 		failTrapsOtF = `/:SpikeTrap100x100px tag=${trapTag} \\\\${evadeTrapsOtF}`;
 		critFailTrapsOtF = `/:SpikeTrap100x100px tag=${trapTag} \\\\${evadeTrapsCfOtF}`;
-	} else if (trapTag == 'BXTSpikeTrap02') {
+	} else if (trapTag == 'DungeonCave01SpikeTrap02') {
 		failTrapsOtF = `/:SpikeTrap160x160px tag=${trapTag} \\\\${evadeTrapsOtF}`;
 		critFailTrapsOtF = `/:SpikeTrap160x160px tag=${trapTag} \\\\${evadeTrapsCfOtF}`;
-	} else if (trapTag == 'BXTSpikeTrap01') {
+	} else if (trapTag == 'DungeonCave01SpikeTrap01') {
 		failTrapsOtF = `/:SpikeTrap160x160px tag=${trapTag} \\\\${evadeTrapsOtF}`;
 		critFailTrapsOtF = `/:SpikeTrap160x160px tag=${trapTag} \\\\${evadeTrapsCfOtF}`;
 	}
