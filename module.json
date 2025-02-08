@@ -15,12 +15,14 @@
   "download": "https://github.com/devakm/gurps-traps/releases/download/0.1.0/module.zip",
   "id": "gurps-traps",
   "relationships": {
-    "requires": [
+    "systems": [
       {
         "id": "gurps",
         "type": "system",
         "compatibility": {}
-      },
+      }
+    ],
+    "requires": [
       {
         "id": "monks-active-tiles",
         "type": "module",
@@ -61,25 +63,5 @@
       },
       "system": "gurps"
     }
-  ],
-  "dependencies": [
-		{
-			"name": "monks-active-tiles",
-			"manifest": "https://github.com/ironmonk88/monks-active-tiles/releases/latest/download/module.json"
-		},
-    {
-			"name": "JB2A",
-			"manifest": "https://github.com/Jules-Bens-Aa/JB2A_DnD5e/releases/download/0.7.6/module.json"
-		},
-    {
-			"name": "sequencer",
-			"manifest": "https://github.com/fantasycalendar/FoundryVTT-Sequencer/releases/download/3.4.8/module.json"
-		},
-    {
-			"name": "tagger",
-			"manifest": "https://github.com/fantasycalendar/FoundryVTT-Tagger/releases/download/1.5.1/module.json"
-		}
-	]
-
-  
+  ]  
 }
