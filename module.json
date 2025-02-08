@@ -15,10 +15,32 @@
   "download": "https://github.com/devakm/gurps-traps/releases/download/0.1.0/module.zip",
   "id": "gurps-traps",
   "relationships": {
-    "systems": [
+    "requires": [
       {
         "id": "gurps",
         "type": "system",
+        "compatibility": {}
+      },
+      {
+        "id": "monks-active-tiles",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "sequencer",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "tagger",
+        "type": "module",
+        "compatibility": {}
+      }
+    ],
+    "recommends": [
+      {
+        "id": "jb2a_patreon",
+        "type": "module",
         "compatibility": {}
       }
     ]
