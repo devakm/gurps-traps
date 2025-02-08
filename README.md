@@ -24,7 +24,7 @@ The format for DetectTraps is:
 -   Skill - Skill name Precheck to evade, i.e. Acrobatics
 -   DetectWith - defaults to PER; could be vision, hearing, etc.
 -   Detect Difficulty - defaults to DifMod; use this if detection is harder or easier than evasion/resistance
--   Trap Tag - the Tagger tag base string for this trap
+-   Trap Tag - the Tagger tag base string for this trap tile set.
 
 `/:DetectTraps title="AxeTrap" dice=5d adds=2 type=cut armordiv=5 attrib=DX difmod=-4 skill=Acrobatics detectwith=!PER! detectdif=-6 tag=AxeTrap02` 
 
