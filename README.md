@@ -33,7 +33,9 @@ The success and fail outcomes for DetectTraps will either warn the player about 
 - `/:EvadeTrap title="${title}" dice=${dice} adds=${adds} type=${type} armordiv=${armorDivisor} attrib=${attribName} difmod=${difMod} skill=${skillName}`
 - `/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${radius} attrib=${attribName} difmod=${difMod}`
 
-For more details, see the [wiki](https://github.com/devakm/gurps-traps/wiki)
+## Setup
+
+For trap types and tile templates setup, see the [wiki](https://github.com/devakm/gurps-traps/wiki)
 
 ## Details
 
