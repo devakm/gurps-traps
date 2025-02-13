@@ -1,15 +1,15 @@
-2025/02/08-12:50:11.565 10864 Recovering log #14
-2025/02/08-12:50:11.572 10864 Delete type=0 #14
-2025/02/08-12:50:11.572 10864 Delete type=3 #12
-2025/02/08-13:04:58.168 162e4 Level-0 table #20: started
-2025/02/08-13:04:58.172 162e4 Level-0 table #20: 10832 bytes OK
-2025/02/08-13:04:58.175 162e4 Delete type=0 #18
-2025/02/08-13:04:58.175 162e4 Manual compaction at level-0 from '!folders!k8eD2DARYudOylcO' @ 72057594037927935 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at (end)
-2025/02/08-13:04:58.175 162e4 Manual compaction at level-1 from '!folders!k8eD2DARYudOylcO' @ 72057594037927935 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at '!macros!B3zHho42g5BWPbIt' @ 22 : 1
-2025/02/08-13:04:58.175 162e4 Compacting 1@1 + 1@2 files
-2025/02/08-13:04:58.181 162e4 Generated table #21@1: 12 keys, 25309 bytes
-2025/02/08-13:04:58.181 162e4 Compacted 1@1 + 1@2 files => 25309 bytes
-2025/02/08-13:04:58.183 162e4 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/02/08-13:04:58.183 162e4 Delete type=2 #16
-2025/02/08-13:04:58.183 162e4 Delete type=2 #20
-2025/02/08-13:04:58.190 162e4 Manual compaction at level-1 from '!macros!B3zHho42g5BWPbIt' @ 22 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at (end)
+2025/02/08-14:08:00.123 167e4 Recovering log #19
+2025/02/08-14:08:00.125 167e4 Delete type=0 #19
+2025/02/08-14:08:00.125 167e4 Delete type=3 #17
+2025/02/08-15:29:09.569 13364 Level-0 table #25: started
+2025/02/08-15:29:09.587 13364 Level-0 table #25: 2486 bytes OK
+2025/02/08-15:29:09.592 13364 Delete type=0 #23
+2025/02/08-15:29:09.604 13364 Manual compaction at level-0 from '!folders!k8eD2DARYudOylcO' @ 72057594037927935 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at (end)
+2025/02/08-15:29:09.604 13364 Manual compaction at level-1 from '!folders!k8eD2DARYudOylcO' @ 72057594037927935 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at '!macros!m0lNkvtI2XvlVHBY' @ 24 : 1
+2025/02/08-15:29:09.604 13364 Compacting 1@1 + 1@2 files
+2025/02/08-15:29:09.617 13364 Generated table #26@1: 13 keys, 27025 bytes
+2025/02/08-15:29:09.617 13364 Compacted 1@1 + 1@2 files => 27025 bytes
+2025/02/08-15:29:09.621 13364 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/02/08-15:29:09.621 13364 Delete type=2 #21
+2025/02/08-15:29:09.621 13364 Delete type=2 #25
+2025/02/08-15:29:09.633 13364 Manual compaction at level-1 from '!macros!m0lNkvtI2XvlVHBY' @ 24 : 1 .. '!macros!qkIHYwJaGtyLXa0e' @ 0 : 0; will stop at (end)

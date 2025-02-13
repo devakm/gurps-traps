@@ -37,7 +37,7 @@
 
 */
 
-console.log(`---------- in DetectTraps ---------`);
+console.log(`---------- start EvadeTrap ---------`);
 
 let title = 'Trap'; // default to Trap
 let dice = 1; // default to 1 die
@@ -112,10 +112,10 @@ console.log(`defaultDifficulty: ${defaultDifficulty}; adjustedDifficulty: ${adju
 let extraSkillOtF = '';
 let defaultSkill = 'Jumping';
 if (skillName != defaultSkill) {
-	extraSkillOtF = ` | S:${defaultSkill} ${adjustedDifficulty}`;
+	extraSkillOtF = ` | Sk:${defaultSkill} ${adjustedDifficulty}`;
 }
 // OtF action setup:
-let DefaultCheck = `[S:${skillName} ${adjustedDifficulty} | ${attribName} ${defaultDifficulty}${extraSkillOtF}]`; // alter the OtF type used for secondary check
+let DefaultCheck = `[Sk:${skillName} ${adjustedDifficulty} | ${attribName} ${defaultDifficulty}${extraSkillOtF}]`; // alter the OtF type used for secondary check
 console.log(`DefaultCheck: ${DefaultCheck};`);
 
 let chatDescription = `<p><b>Evade</b> calculation for <b>${title}</b></p>`;
@@ -148,4 +148,5 @@ let etOtF = `/if ${DefaultCheck} cs:{${csanim} \\\\${csformula}} s:{${sanim} \\\
 console.log(etOtF);
 await GURPS.executeOTF(etOtF);
 
+console.log(`---------- end EvadeTrap ---------`);
 
