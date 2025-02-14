@@ -1,40 +1,32 @@
-/* Usage: EvadeTrap
-   Lets you evade falling into or being skewered by a trap
-   Defauls are DX and Jumping
-   Basic formula concept
-   ["Evade Deadly "Spike Trap" DX-8"/r [DX-8] {"You Evade!"} {[2d tox]}]
-   
-	Difficulty Examples:
-	Evade Crude "Spike Trap" DX+2
-	["Evade Basic "Spike Trap" DX
-	["Evade Devious "Spike Trap" DX-4
-	["Evade Vicious "Spike Trap" DX-6
-	["Evade Deadly "Spike Trap" DX-8"/DX-8 You Evade! /else [3d+3 (2) pi++]]
-   
- Usage: EvadeTrap <title> <dice> <adds> <type> <rsize> <attribute> <difficulty> <skill> <divisor>
-   Title - name to display on dialog
-   Dice - dice of damage per energy point; may be a fraction
-   Adds - modifier to each die of damage, zero if none
-   Type - Damage type (cr, cut, burn, etc...)
-   Divisor - Reduce DR by (x)
-   Attribute - DX, ST, DX, IQ, Will, etc
-   Difficulty Modifier
-   Skill - Skill name Precheck to evade, i.e. Acrobatics
-  
- Examples:
-   -- 1d+9 imp 3-hex radius, Evade using DX-6, difficulty modifier
-   /:EvadeTrap "Spike Trap" 1d 9 imp 3 DX -6 Acrobatics
+/* Usage: /:EvadeTrap title="<title>" dice=<dice> adds=<adds> type=<type> armordiv=<divisor> rsize=<radius> attrib=<attribute> difmod=<difficulty> skill=<skill> detectwith=<detectWith> detectdif=<detectDif> tag=<trapTileTag>
+  Title - name of the trap
+  Dice - dice of damage
+  Adds - modifier to each die of damage, zero if none
+  Type - Damage type (cr, cut, burn, etc...)
+  Divisor - Reduce armor DR by (x) 
+  Radius - Radius in hexes
+  Attribute - DX, ST, DX, IQ, Will, etc
+  Difficulty Modifier - Trap difficulty
+  Skill - Skill name Precheck to evade, i.e. Acrobatics
+  Detect With - Skill or Attribute to detect the trap, i.e. Perception
+  Detect Difficulty - Difficulty to detect trap; default to trap difficulty
+  Trap Tile Tag - Tagger tag name for the tile to trigger, default to SpikeTrap01
 
-   /:EvadeTrap "Pitfall Trap" 3d 6 pi++ 2 DX -6 Jumping
-
-   -- 3d (2) pi++ damage, Evade using DX-2, difficulty modifier
-   /:EvadeTrap "Pitfall Trap" 3d 3 pi++ 2 DX -2 Acrobatics
+Lets you evade falling into or being skewered by a trap
+  Defauls are DX and Jumping
+  Basic formula concept:
+  ["Evade Deadly Spike Trap DX-8"/if [DX-8] {You Evade!} {[3d+3 (2) pi++]}]
    
-  Sample animations:
-  modules/jb2a_patreon/Library/Generic/Healing/HealingAbility_01_Blue_400x400.webm
-  modules/jb2a_patreon/Library/Generic/UI/IconDrop_01_Regular_Red_200x200.webm
-  modules/jb2a_patreon/Library/1st_Level/Bless/Bless_01_Regular_Blue_Intro_200x200.webm
+Difficulty Examples:
+	- Evade Crude "Spike Trap" DX+2
+	- Evade Basic "Spike Trap" DX
+	- Evade Devious "Spike Trap" DX-4
+	- Evade Vicious "Spike Trap" DX-6
+  - Evade Deadly "Spike Trap" DX-8
 
+Example:
+   -- 1d+9 imp 3-hex radius, Evade using DX-6 difficulty modifier
+   /:EvadeTrap title="Spike Trap" dice=1d adds=9 type=imp rsize=3 attrib=DX difmod=-6 skill=Acrobatics
 */
 
 console.log(`---------- start EvadeTrap ---------`);
@@ -79,8 +71,8 @@ let addsTxt = '';
 if (adds === 0) addsTxt = ''
 else if (adds > 0) addsTxt = `+${adds}`;
 else if (adds < 1) addsTxt = `${adds}`;
-let formula = `[${dice}d${addsTxt} (${armorDivisor}) ${type}]`;
-console.log(`formula: ${formula}`);
+let dmgFormula = `[${dice}d${addsTxt} (${armorDivisor}) ${type}]`;
+console.log(`dmgFormula: ${dmgFormula}`);
 // Difficuly Description
 let trapDifficulty = 'Basic'; // default
 if (Number(difMod) <= -8) { 
@@ -119,10 +111,10 @@ let DefaultCheck = `[Sk:${skillName} ${adjustedDifficulty} | ${attribName} ${def
 console.log(`DefaultCheck: ${DefaultCheck};`);
 
 let chatDescription = `<p><b>Evade</b> calculation for <b>${title}</b></p>`;
-console.log(`<p>${title} causes ${formula}.<p> `);
-chatDescription += `<p>The ${title} effect does ${formula}`;
+console.log(`<p>${title} causes ${dmgFormula}.<p> `);
+chatDescription += `<p>The ${title} effect does ${dmgFormula}`;
 chatDescription += `<p><b>The trap difficulty level is ${trapDifficulty} ${title} ${DefaultCheck}</b></p>`;
-chatDescription += `<p>The final calculated formula is ${formula}.</p>`;
+chatDescription += `<p>The final calculated formula is ${dmgFormula}.</p>`;
 chatDescription += `<p>Anyone in the impacted area must ["Evade ${title} ${trapDifficulty}"${reEvadeOtF}]</p>`;
 console.log(chatDescription);
 
@@ -140,9 +132,9 @@ let cfanim = '!/anim IconDrop*Regular_Red c *0.5 @self'; // critical failure ani
 
 // outcome formulas:
 let csformula =`You easily evade the ${title}! You feel great! Gain FP+2  \\\\/fp +2`; // critical success formula 
-let cfformula =`Your attempt to evade the ${title} fails disasterously. You suffer great harm. \\\\/r ${formula} \\\\/rolltable CritHit`; // critical failure formula 
+let cfformula =`Your attempt to evade the ${title} fails disasterously. You suffer great harm. \\\\/r ${dmgFormula} \\\\/rolltable CritHit`; // critical failure formula 
 let sformula =`You evade the ${title}! No bad stuff happens.`; //success formula 
-let fformula =`You fail to evade the ${title}! Bad stuff happens. \\\\/r ${formula} \\\\You can make a last-ditch attempt to ["Dodge and Drop ${adjustedDifficulty}"Dodge ${adjustedDifficulty}] (WARNING: the Dodge and Drop Maneuver leaves you prone!) or ["Acrobatic Dodge ${adjustedDifficulty}!"/if [S:Acrobatics ${adjustedDifficulty}] [Dodge ${acroDodgeDifficulty}] /else [Dodge ${dodgeDifficulty}]]. If you succeed at either, take half damage from an area attack or no damage from a regular attack.`; // failure formula 
+let fformula =`You fail to evade the ${title}! Bad stuff happens. \\\\/r ${dmgFormula} \\\\You can make a last-ditch attempt to ["Dodge and Drop ${adjustedDifficulty}"Dodge ${adjustedDifficulty}] (WARNING: the Dodge and Drop Maneuver leaves you prone!) or ["Acrobatic Dodge ${adjustedDifficulty}!"/if [S:Acrobatics ${adjustedDifficulty}] [Dodge ${acroDodgeDifficulty}] /else [Dodge ${dodgeDifficulty}]]. If you succeed at either, take half damage from an area attack or no damage from a regular attack.`; // failure formula 
 console.log(`csformula: ${csformula}; cfformula: ${cfformula}; sformula: ${sformula}; fformula: ${fformula};`);
 let etOtF = `/if ${DefaultCheck} cs:{${csanim} \\\\${csformula}} s:{${sanim} \\\\${sformula}} f:{${fanim} \\\\${fformula}} cf:{${cfanim} \\\\${cfformula}}`;
 console.log(etOtF);
