@@ -1,8 +1,8 @@
 {
-  "width": 516,
-  "height": 65,
-  "x": 7058,
-  "y": 1537,
+  "width": 519,
+  "height": 88,
+  "x": 7080,
+  "y": 1487,
   "rotation": 0,
   "alpha": 0.1,
   "hidden": true,
@@ -36,7 +36,7 @@
     },
     "tagger": {
       "tags": [
-        "BXTAlchemistFireDoorTrap01"
+        "DC01AlchemistFireDoorTrap01"
       ]
     },
     "monks-active-tiles": {
@@ -69,7 +69,10 @@
         {
           "action": "target",
           "data": {
-            "entity": {},
+            "entity": {
+              "id": "token",
+              "name": "Triggering Token"
+            },
             "location": {},
             "remotesnap": true,
             "animatepan": false,
@@ -79,7 +82,8 @@
             "item": {},
             "actor": {},
             "token": {},
-            "target": "target"
+            "target": "add",
+            "for": "everyone"
           },
           "id": "tPEBqk1rTPlI7kW3"
         },
@@ -97,33 +101,17 @@
           "action": "runmacro",
           "data": {
             "entity": {
-              "id": "Macro.8ENgVTnnuwezapNR",
-              "name": "PickMe"
+              "id": "Macro.9whCCKQfQnnyHP5d",
+              "name": "DC01DetectAlchemistFire"
             },
             "args": "",
             "runasgm": "player"
           },
-          "id": "2BOAccJBuB8IoVJI"
-        },
-        {
-          "action": "chatmessage",
-          "data": {
-            "flavor": "",
-            "text": "/:DetectTraps title=\"AlchemistFire\" dice=4 adds=4 type=burn rsize=3 attrib=DX difmod=-6 skill=Jumping detectwith=!PER! detectdif=-8 tag=BXTrapStatue05",
-            "entity": {
-              "id": "token",
-              "name": "Triggering Token"
-            },
-            "incharacter": false,
-            "chatbubble": "false",
-            "language": "",
-            "showto": "gm"
-          },
-          "id": "VQUSg5bv6I3YG28T"
+          "id": "Qf1kdQBi95klnKmM"
         }
       ],
       "allowpaused": false,
-      "fileindex": 0,
+      "fileindex": 1,
       "files": [],
       "history": {
         "": {
@@ -1059,129 +1047,273 @@
             }
           ]
         },
-        "GRdtsTW87pag75Kw": {
-          "tokenid": "GRdtsTW87pag75Kw",
+        "Wf30NgSfOeLnZUdf": {
+          "tokenid": "Wf30NgSfOeLnZUdf",
           "triggered": [
             {
-              "id": "WCFbCkDltsrkpgwX",
+              "id": "zYbvc8PirncYip8W",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "trigger",
-              "when": 1738894751671
+              "when": 1739591993762
             },
             {
-              "id": "pijRhWOs1oeWroLA",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "7vw9bbQZzuGOGMx7",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738894776510
+              "when": 1739596613739
             },
             {
-              "id": "91PrIFaEZ5njuTTT",
-              "who": "sVxF0AzuvK7ZMqXx",
-              "how": "trigger",
-              "when": 1738895468189
-            },
-            {
-              "id": "CHPFxG38DjgP4Ejq",
+              "id": "46ZyqZCbWvGXDhlO",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738895468581
+              "when": 1739596614939
             },
             {
-              "id": "lASwDX9Vtsj812tT",
+              "id": "BIO9A0HRR1NkKYBo",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "trigger",
-              "when": 1738895685801
+              "when": 1739596976240
             },
             {
-              "id": "FmiydcpUEiOyinzQ",
+              "id": "RzjTRtLorITpKU8E",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738895686177
+              "when": 1739596976462
             },
             {
-              "id": "m0F2dPXkbhR9EkiR",
+              "id": "J7ITyJJhgOCyJ8Dn",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739597324119
+            },
+            {
+              "id": "YzniITqnamkX9AMN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739597325852
+            },
+            {
+              "id": "qD99pspcb74R9Fx0",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739599070203
+            },
+            {
+              "id": "RR1j4HxabIJmXTtl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739599070940
+            },
+            {
+              "id": "me0Vv66ihRePGn5x",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739600830921
+            },
+            {
+              "id": "fBJaq3WWtk2Cct8t",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739600831965
+            },
+            {
+              "id": "ywRTj6SfZCHzBMTI",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601184022
+            },
+            {
+              "id": "nKf9SPx4TlBEBUxi",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601185193
+            },
+            {
+              "id": "H3TPKzsbiJLM5aKI",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "trigger",
-              "when": 1738897220801
+              "when": 1739601363870
             },
             {
-              "id": "aWn3b30YIYyGDQF2",
+              "id": "MMxBQAgn3dabQN3r",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738897221240
+              "when": 1739601364457
             },
             {
-              "id": "E3yOEc1hfIJaE496",
+              "id": "A0oMAqW11W3kEAnm",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601519683
+            },
+            {
+              "id": "ka9xRaXVRvolO2NL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601521072
+            },
+            {
+              "id": "PnfNUZRyGWtXJYL6",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601750635
+            },
+            {
+              "id": "BK3dvwVjTK5Li7Wl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601752063
+            },
+            {
+              "id": "LaUgLjmaAD8lNht4",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601984060
+            },
+            {
+              "id": "IsSBlNccGu63eOZb",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601986087
+            },
+            {
+              "id": "WUxPeGj5mufeTboI",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602192497
+            },
+            {
+              "id": "P9F4KVgSdGb4tFpH",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602192999
+            },
+            {
+              "id": "UOPc691zhG9JtwN5",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602296531
+            },
+            {
+              "id": "RUBmBhZKzk3can42",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602297060
+            },
+            {
+              "id": "hUDm7r0cBtYTqAJ2",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602517410
+            },
+            {
+              "id": "PD8xBMIbX0hTnWwY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602518095
+            },
+            {
+              "id": "SwAhvgixnthpteeh",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602678603
+            },
+            {
+              "id": "yucYvxb2rHFM2BCA",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602678991
+            },
+            {
+              "id": "PtY5c4LEGKQjKr8Z",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602796789
+            },
+            {
+              "id": "GjyF2BfWhbha8q3c",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602797997
+            },
+            {
+              "id": "s2fvA5gQX2bc4gtt",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739691212959
+            },
+            {
+              "id": "Btd0ORbzFaQrLKXS",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739691743988
+            },
+            {
+              "id": "faU5fmDH2YMeUE8c",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "trigger",
-              "when": 1738901356517
+              "when": 1739691902474
             },
             {
-              "id": "qa4WlSaTkKPpcGFd",
+              "id": "YVHCdlHn2QfkPQBj",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738901356926
+              "when": 1739691902916
             },
             {
-              "id": "ILHthF6jwvukcfck",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "L9RyT8L2xmMFbf02",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738901573789
+              "when": 1739692300536
             },
             {
-              "id": "5o8i2Gnc8QzTtI6e",
+              "id": "oNFkAjqszc2Q2EHS",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738901574082
+              "when": 1739692301092
             },
             {
-              "id": "D2DTnFQJD4QLA8Rs",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "PcX56bPB1TfiF28o",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902408527
+              "when": 1739692670785
             },
             {
-              "id": "gdLDUECTPxGovbZl",
+              "id": "wkOzjZmcxrPoGANU",
               "who": "sVxF0AzuvK7ZMqXx",
               "how": "enter",
-              "when": 1738902408896
+              "when": 1739692673016
             },
             {
-              "id": "C8DfKSJDWDEx46yK",
+              "id": "NZZwcjM6XUAyy9pw",
               "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739692804542
+            },
+            {
+              "id": "hyplttZaBfhWnXzq",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "enter",
+              "when": 1739692956101
+            },
+            {
+              "id": "iiydfQLpw0wOhPDr",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902443550
-            },
-            {
-              "id": "N3XFFw3aJ4BMqby6",
-              "who": "sVxF0AzuvK7ZMqXx",
-              "how": "enter",
-              "when": 1738902443896
-            },
-            {
-              "id": "U432wIownoAqMzyy",
-              "who": "sVxF0AzuvK7ZMqXx",
-              "how": "trigger",
-              "when": 1738902979862
-            },
-            {
-              "id": "pXgPhwJjuusgXOuz",
-              "who": "sVxF0AzuvK7ZMqXx",
-              "how": "enter",
-              "when": 1738902980198
+              "when": 1739693275845
             }
           ]
         }
       },
-      "name": "",
+      "name": "DC01DetectAlchemistFireDoorTrap01",
       "vision": false,
       "cooldown": null
     },
     "exportSource": {
-      "world": "YourWorld",
+      "world": "YourWorldName",
       "system": "gurps",
       "coreVersion": "12.331",
-      "systemVersion": "0.17.17"
+      "systemVersion": "0.17.18"
     }
   },
   "texture": {
@@ -1202,8 +1334,8 @@
     "weather": false
   },
   "elevation": 0,
-  "id": "F0X0yrlscrV8TPuJ",
-  "name": "DetectTrapsAlchemistFireDoorTrap01",
+  "id": "PK1uy4tCLtYKLbnW",
+  "name": "DetectTrapsAlchemistFire01",
   "visible": true,
   "img": "icons/svg/trap.svg",
   "thumbnail": "icons/svg/trap.svg"

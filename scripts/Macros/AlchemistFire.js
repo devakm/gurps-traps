@@ -14,7 +14,7 @@ End effects
 console.log(`-----------  Start AlchemistFire Animation   -----------`);
 
 let sourceTag = scope.tag;
-//let sourceTag = 'BXTrapStatue05';
+//let sourceTag = 'DC01TrapStatue05';
 console.log(`sourceTag:${sourceTag}`);
 
 // preload animations 
@@ -56,7 +56,7 @@ async function grenade(dbSpray,dbLingering){
             .persist() 
 			.name('AlchemistFire') // we name the effect so we can call it later
             .thenDo(() => {
-				let triggerTag = `Reveal${sourceTag}`;// tag to trigger defaults to "Reveal<Tag>", as in "RevealBXTrapStatue05"
+				let triggerTag = `GMTargetsFor${sourceTag}`;// tag to trigger defaults to "GMTargetsFor<Tag>", as in "GMTargetsForDC01TrapStatue05"
 				let tile= Tagger.getByTag(triggerTag);
                 // Add additional tile triggers here; 
                 // Only triggers the oldest tile with this particular Tag

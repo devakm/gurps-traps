@@ -1,10 +1,10 @@
 {
-  "width": 477,
-  "height": 76,
-  "x": 7145,
+  "width": 476,
+  "height": 142,
+  "x": 7123,
   "y": 1550,
   "rotation": 0,
-  "alpha": 0.1,
+  "alpha": 0.15,
   "hidden": true,
   "locked": false,
   "occlusion": {
@@ -36,7 +36,7 @@
     },
     "tagger": {
       "tags": [
-        "GMTargetsForBXTAlchemistFireDoorTrap01"
+        "GMTargetsForDC01AlchemistFireDoorTrap01"
       ]
     },
     "monks-active-tiles": {
@@ -70,24 +70,6 @@
           "id": "ghlCJ08zSItwU9bU"
         },
         {
-          "action": "target",
-          "data": {
-            "entity": {},
-            "location": {},
-            "remotesnap": true,
-            "animatepan": false,
-            "deletesource": false,
-            "preservesettings": true,
-            "avoidtokens": false,
-            "item": {},
-            "actor": {},
-            "token": {},
-            "target": "add",
-            "for": "everyone"
-          },
-          "id": "tPEBqk1rTPlI7kW3"
-        },
-        {
           "action": "exists",
           "data": {
             "entity": "",
@@ -107,7 +89,7 @@
               "name": "Current tokens"
             },
             "incharacter": true,
-            "chatbubble": "true",
+            "chatbubble": true,
             "language": "",
             "showto": "everyone"
           },
@@ -119,8 +101,8 @@
             "flavor": "",
             "text": "<h3>As you open the door, a counterweight mechanism pumps burning alchemist’s fire from spouts in the statues mouths, dousing any character standing on the three northmost rows of floor stones. Burning characters can be extinguished by the actions of their comrades. This is a Vicious Alchemist Fire Trap!</h3>",
             "entity": {
-              "id": "previous",
-              "name": "Current tokens"
+              "id": "token",
+              "name": "Triggering Token"
             },
             "incharacter": false,
             "chatbubble": "false",
@@ -675,69 +657,69 @@
             }
           ]
         },
-        "GRdtsTW87pag75Kw": {
-          "tokenid": "GRdtsTW87pag75Kw",
+        "Wf30NgSfOeLnZUdf": {
+          "tokenid": "Wf30NgSfOeLnZUdf",
           "triggered": [
             {
-              "id": "nrfLbpUzDGLpt6oG",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "WcjNqtGBoeGLTn25",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738901361101
+              "when": 1739600846696
             },
             {
-              "id": "Rp6bgIaon3cwrSIm",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "XglSptROBjaXitvU",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738901582003
+              "when": 1739601188663
             },
             {
-              "id": "CtC1KDZT8pbTXGuS",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "uKd801PdEmO2cYuF",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738901985777
+              "when": 1739601524286
             },
             {
-              "id": "LnxAFYfNWy42waO2",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "o2ppNJo8k5I8FnRs",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902413045
+              "when": 1739601755267
             },
             {
-              "id": "y8kie1EpyREz6XOF",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "6CkUtPcyyozZLCuU",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902447987
+              "when": 1739601989611
             },
             {
-              "id": "wZ0rIpH15HbuSACf",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "uJs9jCb46CTvHbUH",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902448619
+              "when": 1739602197618
             },
             {
-              "id": "asx1ZWZWNSQk5cro",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "7fWQ3VGpIWJlBE6J",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738902986349
+              "when": 1739602302326
             },
             {
-              "id": "UM0On8WtxeWS901K",
-              "who": "sVxF0AzuvK7ZMqXx",
+              "id": "8NBvaClX2SH8RsB7",
+              "who": "KtZWaj9WGfZlnt9f",
               "how": "trigger",
-              "when": 1738903122745
+              "when": 1739602801370
             }
           ]
         }
       },
-      "name": "",
+      "name": "GMTargetsForDC01AlchemistFireDoorTrap01",
       "vision": false,
       "cooldown": null
     },
     "exportSource": {
-      "world": "YourWorld",
+      "world": "YourWorldName",
       "system": "gurps",
       "coreVersion": "12.331",
-      "systemVersion": "0.17.17"
+      "systemVersion": "0.17.18"
     }
   },
   "texture": {
@@ -758,8 +740,8 @@
     "weather": false
   },
   "elevation": 0,
-  "id": "riwD9q7l2PVzVbd7",
-  "name": "GMTargetsForAlchemistFireDoorTrap01",
+  "id": "HOjv5ODct9zNFeVs",
+  "name": "GMTargetsForAlchemistFire01",
   "visible": true,
   "img": "icons/svg/target.svg",
   "thumbnail": "icons/svg/target.svg"

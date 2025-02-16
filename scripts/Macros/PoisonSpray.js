@@ -57,10 +57,9 @@ async function grenade(dbSpray,dbLingering){
             .persist() 
 			.name('PoisonCloud') // we name the effect so we can call it later
             .thenDo(() => {
-				let triggerTag = `Reveal${sourceTag}`;
-				let tile= Tagger.getByTag(triggerTag);
-				//tile[0].trigger({});
-                // Replace Test Tag with the Tag you're using.
+				let triggerTag = `GMTargetsFor${sourceTag}`;
+				let tile = Tagger.getByTag(triggerTag);
+                // Replace "GMTargetsFor" with the prefix for the Tag you're using in the current set ${sourceTag}.
                 // Only triggers the oldest tile with this particular Tag
                 tile[0].trigger({tokens:[canvas.tokens.controlled[0].document], method: 'trigger'})
 			})			

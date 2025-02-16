@@ -1,24 +1,23 @@
-/* Usage: ResistEffect
-   Lets you resist deadly toxins and other environmental hazards
+/* Usage:  /:ResistEffect title="<title>" dice=<dice> adds=<adds> type=<type> rsize=<radius> attrib=<attribute> difmod=<difficulty>
+	Title - name to display on dialog
+	Dice - dice of damage
+	Adds - modifier to each die of damage, zero if none
+	Type - Damage type (usually tox)
+	Size - Radius of effect in hexes
+	Attribute - usually HT
+	Difficulty Modifier
+
+Lets you resist deadly toxins and other environmental hazards
    
-   Basic formula concept
-   ["Resist Deadly Poison HT-8"/r [HT-8] {"You Resist!"} {[2d tox]}]
+Basic formula concept
+	["Resist Deadly Poison HT-8"/if [HT-8] {You Resist!} {[5d tox]}]
    
-	Difficulty Examples:
-	["Resist Weak Poison" HT+2
-	["Resist Basic Poison HT
-	["Resist Strong Poison HT-4
-	["Resist Very Strong Poison HT-6
-	["Resist Deadly Poison HT-8"/HT-8 You Resist! /else [2d tox]]
-   
- Usage: ResistEffect <title> <dice> <adds> <type> <rsize> <attribute> <difficulty>
-   Title - name to display on dialog
-   Dice - dice of damage per energy point; may be a fraction
-   Adds - modifier to each die of damage, zero if none
-   Type - Damage type (cr, cut, burn, etc...)
-   Size - Radius of Spell Area in hexes
-   Attribute - HT, ST, DX, IQ, Will, etc
-   Difficulty Modifier
+Difficulty Examples:
+	- Resist Weak Poison HT+2
+	- Resist Basic Poison HT
+	- Resist Strong Poison HT-4
+	- Resist Very Strong Poison HT-6
+	- Resist Deadly Poison HT-8
    
  Examples:
    -- 1d+9 tox 3-hex radius, Resist using HT-6, difficulty modifier
@@ -52,12 +51,14 @@ try {
 console.log(`title: ${title}; dice: ${dice}; adds: ${adds}; type: ${type}; attribute: ${attribute}; difMod: ${difMod}`);
 
 // calculate damage formula OtF
-let addsTxt = '';
-let difModTxt = '';
 let adjustedDifficultyTxt = '';
-if (adds > -1) addsTxt = `+`;
-let dmgFormula = `[${dice}d ${addsTxt}${adds} ${type}]`;
+let addsTxt = '';
+if (adds === 0) addsTxt = ''
+else if (adds > 0) addsTxt = `+${adds}`;
+else if (adds < 1) addsTxt = `${adds}`;
+let dmgFormula = `[${dice}d${addsTxt} ${type}]`;
 console.log(`dmgFormula: ${dmgFormula}`);
+
 // Difficuly Description
 let trapDifficulty = 'Basic';
 if (Number(difMod) <= -8) { 
@@ -73,8 +74,7 @@ if (Number(difMod) <= -8) {
 } else if (Number(difMod) > 0) { 
 	trapDifficulty = `Weak`;
 }
-if (difMod > -1) difModTxt = `+`;
-let reResistEffectOtF =`/:ResistEffect title=${title} dice=${dice} adds=${adds} type=${type} rsize=${rsize} attrib=${attribute} difmod=${difMod}`;
+let reResistEffectOtF =`/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${rsize} attrib=${attribute} difmod=${difMod}`;
 console.log(`reResistEffectOtF: ${reResistEffectOtF}`);
 
 function resisteffect(Resistance) {
@@ -94,7 +94,6 @@ function resisteffect(Resistance) {
 
 	let chatDescription = `<p><b>Resistance</b> calculation for <b>${title}</b></p>`;
 	console.log(`<p>${title} causes ${dmgFormula}.<p> `);
-	chatDescription += `<p>The ${title} effect does ${dice} ${adds} ${type} - ${dmgFormula}`;
 	chatDescription += `<p><b>The ${title} trap difficulty level is ${trapDifficulty} ${title} ${attribute} ${difMod}</b></p>`;
 	chatDescription += `<p>The final calculated formula is ${dmgFormula}.</p>`;
 	chatDescription += `<p>The ${title} affects Radius ${rsize}.</p>`;
