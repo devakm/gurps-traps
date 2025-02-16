@@ -51,6 +51,7 @@ try {
 console.log(`title: ${title}; dice: ${dice}; adds: ${adds}; type: ${type}; attribute: ${attribute}; difMod: ${difMod}`);
 
 // calculate damage formula OtF
+let adjustedDifficultyTxt = '';
 let addsTxt = '';
 if (adds === 0) addsTxt = ''
 else if (adds > 0) addsTxt = `+${adds}`;
@@ -73,7 +74,7 @@ if (Number(difMod) <= -8) {
 } else if (Number(difMod) > 0) { 
 	trapDifficulty = `Weak`;
 }
-let reResistEffectOtF =`/:ResistEffect title=${title} dice=${dice} adds=${adds} type=${type} rsize=${rsize} attrib=${attribute} difmod=${difMod}`;
+let reResistEffectOtF =`/:ResistEffect title="${title}" dice=${dice} adds=${adds} type=${type} rsize=${rsize} attrib=${attribute} difmod=${difMod}`;
 console.log(`reResistEffectOtF: ${reResistEffectOtF}`);
 
 function resisteffect(Resistance) {
@@ -93,7 +94,6 @@ function resisteffect(Resistance) {
 
 	let chatDescription = `<p><b>Resistance</b> calculation for <b>${title}</b></p>`;
 	console.log(`<p>${title} causes ${dmgFormula}.<p> `);
-	chatDescription += `<p>The ${title} effect does ${dice} ${adds} ${type} - ${dmgFormula}`;
 	chatDescription += `<p><b>The ${title} trap difficulty level is ${trapDifficulty} ${title} ${attribute} ${difMod}</b></p>`;
 	chatDescription += `<p>The final calculated formula is ${dmgFormula}.</p>`;
 	chatDescription += `<p>The ${title} affects Radius ${rsize}.</p>`;
