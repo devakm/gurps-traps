@@ -1,4 +1,9 @@
 # gurps-traps
+## Update
+You must have **Use Core Macro Execute** enabled in MATT Config. If you don't specify **Use Core Macro Execute** in MATT Config, you will get strange results (some rolls will be forced to the GM).
+
+![Image](https://github.com/user-attachments/assets/63d566da-e827-4f87-9562-f3051e819e6c)
+
 # Traps for GURPS Game Aid
 
 ![image](https://github.com/user-attachments/assets/40397bef-8e5f-4cd8-b4ec-737680cca0ee)
