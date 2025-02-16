@@ -1,0 +1,1342 @@
+{
+  "width": 519,
+  "height": 88,
+  "x": 7080,
+  "y": 1487,
+  "rotation": 0,
+  "alpha": 0.1,
+  "hidden": true,
+  "locked": false,
+  "occlusion": {
+    "mode": 0,
+    "alpha": 0
+  },
+  "video": {
+    "loop": true,
+    "autoplay": true,
+    "volume": 0
+  },
+  "flags": {
+    "levels": {
+      "rangeBottom": null,
+      "rangeTop": null,
+      "showIfAbove": false,
+      "showAboveRange": null,
+      "isBasement": false,
+      "noFogHide": false,
+      "excludeFromChecker": false,
+      "noCollision": false,
+      "allWallBlockSight": true
+    },
+    "betterroofs": {
+      "brMode": false,
+      "manualPoly": "",
+      "occlusionLinkId": "",
+      "occlusionLinkSource": false
+    },
+    "tagger": {
+      "tags": [
+        "DC01AlchemistFireDoorTrap01"
+      ]
+    },
+    "monks-active-tiles": {
+      "active": true,
+      "record": true,
+      "restriction": "all",
+      "controlled": "all",
+      "trigger": [
+        "enter"
+      ],
+      "usealpha": false,
+      "pointer": false,
+      "pertoken": false,
+      "minrequired": 0,
+      "chance": 100,
+      "actions": [
+        {
+          "action": "distance",
+          "data": {
+            "entity": "",
+            "measure": "lte",
+            "distance": {
+              "value": 1,
+              "var": "sq"
+            },
+            "continue": "within"
+          },
+          "id": "ghlCJ08zSItwU9bU"
+        },
+        {
+          "action": "target",
+          "data": {
+            "entity": {
+              "id": "token",
+              "name": "Triggering Token"
+            },
+            "location": {},
+            "remotesnap": true,
+            "animatepan": false,
+            "deletesource": false,
+            "preservesettings": true,
+            "avoidtokens": false,
+            "item": {},
+            "actor": {},
+            "token": {},
+            "target": "add",
+            "for": "everyone"
+          },
+          "id": "tPEBqk1rTPlI7kW3"
+        },
+        {
+          "action": "exists",
+          "data": {
+            "entity": "",
+            "collection": "tokens",
+            "count": "> 0",
+            "none": "end"
+          },
+          "id": "DWAhC20ilNMa8sCo"
+        },
+        {
+          "action": "runmacro",
+          "data": {
+            "entity": {
+              "id": "Macro.9whCCKQfQnnyHP5d",
+              "name": "DC01DetectAlchemistFire"
+            },
+            "args": "",
+            "runasgm": "player"
+          },
+          "id": "Qf1kdQBi95klnKmM"
+        }
+      ],
+      "allowpaused": false,
+      "fileindex": 1,
+      "files": [],
+      "history": {
+        "": {
+          "tokenid": "",
+          "triggered": [
+            {
+              "id": "25I4kuBSbO25qR03",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524549090
+            },
+            {
+              "id": "slmUH3cRw6U1CCeL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524590383
+            },
+            {
+              "id": "NWiFy79w6eyZvlTB",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524726008
+            },
+            {
+              "id": "7gQP7vw9j3tKm12S",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524801337
+            },
+            {
+              "id": "xnOkqGSnDGTV4zaQ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524889778
+            },
+            {
+              "id": "LFGR4KXrmmz7z5bF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724524899834
+            },
+            {
+              "id": "ssU5DamYQFzaJnVW",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "when": 1724525070407
+            },
+            {
+              "id": "9pNR5PaD36f2xvXl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727040416378
+            },
+            {
+              "id": "d67tmBPkV5K9y9MB",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727041550482
+            }
+          ]
+        },
+        "FQXBKd2S4RqtDdKR": {
+          "tokenid": "FQXBKd2S4RqtDdKR",
+          "triggered": [
+            {
+              "id": "b8SMsqyqB7Ig2Oaj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724524785434
+            },
+            {
+              "id": "FdetQS74s5dNMRSR",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724525247842
+            },
+            {
+              "id": "GdtSS0YJveceQ4rI",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724525419785
+            }
+          ]
+        },
+        "p7WQ2bKrd1Ph7eIj": {
+          "tokenid": "p7WQ2bKrd1Ph7eIj",
+          "triggered": [
+            {
+              "id": "nIjePaZ6iH3vT2xq",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724617901174
+            },
+            {
+              "id": "vkowJbp8gPcaNiHF",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1724618788861
+            },
+            {
+              "id": "gmbU0PX5lQ9NXTPL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724620154824
+            },
+            {
+              "id": "9eEwXuqsffyF6odU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724620724735
+            },
+            {
+              "id": "618FXZoxJqyKmvHL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724621038484
+            },
+            {
+              "id": "enDfYdWld5uwte7k",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724621899534
+            },
+            {
+              "id": "SaIBLRsB7p0YdmVx",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724626719239
+            },
+            {
+              "id": "y7ENNjXDA0Gk7c5h",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724626830374
+            },
+            {
+              "id": "QViKcdjiIkFMxvxY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627081915
+            },
+            {
+              "id": "4cxwOTlLOLPQ5Soc",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627161707
+            },
+            {
+              "id": "V5zoanRxPZoVxcXN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627334272
+            },
+            {
+              "id": "jo2ag1YroiFfu7MU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627566949
+            },
+            {
+              "id": "goeg55LetSEz41uG",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627704749
+            },
+            {
+              "id": "ZlgqsBFg4YhfI2In",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627724865
+            },
+            {
+              "id": "XQZ5ZTRgZHXcIDKL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627903322
+            },
+            {
+              "id": "QYca4ByQ6TbItJmu",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724627925590
+            },
+            {
+              "id": "cR6o4foZG2g0U9Uf",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724628026941
+            }
+          ]
+        },
+        "x4KT5djBTVyWCqew": {
+          "tokenid": "x4KT5djBTVyWCqew",
+          "triggered": [
+            {
+              "id": "IZ2sSwbyJ5qi8gIU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724623523979
+            },
+            {
+              "id": "kScBtOZU3hQAgZKC",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724623964120
+            },
+            {
+              "id": "0HMbG6OswOQztkvw",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724623990859
+            },
+            {
+              "id": "3FLVQKK3oTmV5rR5",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724636878519
+            },
+            {
+              "id": "n7Zl9SeFFAvTtfsV",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724727372373
+            },
+            {
+              "id": "5Ahg1IQGOFLsr0jM",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724728004553
+            },
+            {
+              "id": "1llk8I8kWXXyA1lR",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724728023081
+            }
+          ]
+        },
+        "dV9Y2WVh5Uogenql": {
+          "tokenid": "dV9Y2WVh5Uogenql",
+          "triggered": [
+            {
+              "id": "uFQazcxpsPLaXVhN",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724638971293
+            },
+            {
+              "id": "ysNzlYvZOU7QTAt9",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724729023976
+            },
+            {
+              "id": "CT7LubeBNHESYIYi",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724729340978
+            },
+            {
+              "id": "75MvNzW50cFSXc4b",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724729594903
+            },
+            {
+              "id": "SjmneSfatxf2Cz2c",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724729850044
+            },
+            {
+              "id": "u9vbzGYAhCJXAKiD",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724729988181
+            },
+            {
+              "id": "KAeqMEtBmFfV7CuU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1724730106288
+            },
+            {
+              "id": "asmgdahJfP0dC0UI",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724731074960
+            },
+            {
+              "id": "LPIYd6K4r659ux5h",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724734214189
+            },
+            {
+              "id": "X5Branbx76cSk7YJ",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724741481507
+            },
+            {
+              "id": "eoJq49gaSUsJDzA4",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724741597679
+            },
+            {
+              "id": "YSCanDifgnUsl1WE",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724741875206
+            },
+            {
+              "id": "wJAbE6hq31qDPEVn",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724811061393
+            },
+            {
+              "id": "s5lALudFAW8eppC0",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724811271331
+            },
+            {
+              "id": "ZGiuW64tZhzGq0iP",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724811538825
+            },
+            {
+              "id": "IWRswt9J0MGTbBkf",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724811634065
+            },
+            {
+              "id": "ZunNipLamPIGJPcf",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724811887457
+            },
+            {
+              "id": "miYYBeGq7paNn9oe",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1724812260602
+            },
+            {
+              "id": "WAWE8fzpFWblS3MO",
+              "who": "NFw1v09fEiP85nzb",
+              "how": "enter",
+              "when": 1725839025085
+            }
+          ]
+        },
+        "YShlinDoAv3dMXwL": {
+          "tokenid": "YShlinDoAv3dMXwL",
+          "triggered": [
+            {
+              "id": "fYcFC76zZSFRx8yg",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725062152038
+            },
+            {
+              "id": "OQ7sPtRSDcnTHes4",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725062823840
+            },
+            {
+              "id": "aYBHywhVrtlk9m39",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725062951240
+            },
+            {
+              "id": "Z0sajlj6WUNma5t3",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725063519895
+            },
+            {
+              "id": "XoeVJix8wJIXPBS5",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725063670583
+            },
+            {
+              "id": "fajAGwAgIjFFFABT",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725066313361
+            },
+            {
+              "id": "Pv9TFxIoOTfZyqOw",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725066720793
+            },
+            {
+              "id": "QrQLr1xIlGa2EOHJ",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725066760073
+            }
+          ]
+        },
+        "w0qsIwNGBoRXwhBv": {
+          "tokenid": "w0qsIwNGBoRXwhBv",
+          "triggered": [
+            {
+              "id": "ECA7R74vN5FjgF8W",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725158079593
+            },
+            {
+              "id": "PQ3eTrpGkQlchIzG",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725158108956
+            },
+            {
+              "id": "sUvoWW4bKd7J59x0",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725158120591
+            },
+            {
+              "id": "0PSQGZpj5ySveMco",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725158131018
+            },
+            {
+              "id": "FEcnPq01TipaE3jO",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725158476677
+            },
+            {
+              "id": "yp7ij6u6ULGF6j6N",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725158514105
+            },
+            {
+              "id": "9Vxoxh0yLbJEweJ7",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725158695677
+            },
+            {
+              "id": "2iXpZNEhmpBKcP2T",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725159370856
+            },
+            {
+              "id": "MDGdZ7MldBXUMSuf",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725159419088
+            },
+            {
+              "id": "zWx1PINUG5SXMtT5",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725159429681
+            },
+            {
+              "id": "q9ZavYYz18GTfYhZ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725159619499
+            },
+            {
+              "id": "nXDPvncCsHqvCqFS",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725160875138
+            },
+            {
+              "id": "AU5Q3uPFiJfuHZQO",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161075738
+            },
+            {
+              "id": "AqloEYxJqhasGM5e",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161176652
+            },
+            {
+              "id": "drdKdv89cKV7BTbS",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161190244
+            },
+            {
+              "id": "Gs5FVrDN2vFomRLq",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161205137
+            },
+            {
+              "id": "bHi0ZXsLSSvZSNB7",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161213986
+            },
+            {
+              "id": "EndAr7uQk1y3Th4x",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161221324
+            },
+            {
+              "id": "QMKPEVP5MIk63FuW",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161744754
+            },
+            {
+              "id": "ta9YpVu8ZFrRb5k8",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161754916
+            },
+            {
+              "id": "jOxpFyNuZZNXeMbj",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725161773278
+            },
+            {
+              "id": "bVXqgn23Ehw9w6lM",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162200427
+            },
+            {
+              "id": "PBHPKB4o6JJDUsvk",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162246914
+            },
+            {
+              "id": "M6GICK0SCdVRKT6M",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162263891
+            },
+            {
+              "id": "lB5X52h5MVeQAjx7",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162276608
+            },
+            {
+              "id": "oPR6kiZMUKK6YL55",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162284774
+            },
+            {
+              "id": "uoPk8wOGjPmHzeWi",
+              "who": "nc5RrE4JR8kywAZw",
+              "how": "enter",
+              "when": 1725162294225
+            },
+            {
+              "id": "FsrGfHWyxNrC6RFe",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725162723070
+            },
+            {
+              "id": "KdcqjWPZ0I4KrrKl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725162731762
+            },
+            {
+              "id": "NuaRY9OUuVyLYE1e",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725163789126
+            },
+            {
+              "id": "hiNOinHlFdD5xR53",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725163797369
+            },
+            {
+              "id": "LCXRNhGeo6UTfcrx",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725164005690
+            }
+          ]
+        },
+        "L9ON8D8ttYn8ykvv": {
+          "tokenid": "L9ON8D8ttYn8ykvv",
+          "triggered": [
+            {
+              "id": "SOgZTFK6AbaFRRrY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725259301013
+            },
+            {
+              "id": "zkCEkZBh2easJHaN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725294281404
+            },
+            {
+              "id": "K3fu9DGd6QfiJnQM",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725297530585
+            },
+            {
+              "id": "9HTBjvPGf8P8fHjt",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725298796910
+            },
+            {
+              "id": "PKpdF9KqMV8Wh0sa",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725303994472
+            },
+            {
+              "id": "2w4qRZoQrFX7IL3d",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725319826808
+            },
+            {
+              "id": "yJXKmjCeRylAK7eL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725320485985
+            },
+            {
+              "id": "CZyVofvP8UIZVwFH",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725320768110
+            }
+          ]
+        },
+        "8YoJAboxTyBetgkk": {
+          "tokenid": "8YoJAboxTyBetgkk",
+          "triggered": [
+            {
+              "id": "uuQAGMHlj2ymXzNC",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725839501536
+            },
+            {
+              "id": "sOtAfEDFJO2kMcBP",
+              "who": "8M7J8jG0LwO2Jrp2",
+              "how": "enter",
+              "when": 1728265337796
+            }
+          ]
+        },
+        "3gT6JE5SnvZN47KD": {
+          "tokenid": "3gT6JE5SnvZN47KD",
+          "triggered": [
+            {
+              "id": "pkPJfafyx3o4880s",
+              "who": "cBAbA0n3ZCXVt5Zl",
+              "how": "enter",
+              "when": 1725839811915
+            },
+            {
+              "id": "InYLKaBbpjLGSRIO",
+              "who": "cBAbA0n3ZCXVt5Zl",
+              "how": "enter",
+              "when": 1728265398189
+            },
+            {
+              "id": "4rESC69a6r0YAZcQ",
+              "who": "cBAbA0n3ZCXVt5Zl",
+              "how": "trigger",
+              "when": 1728266343920
+            },
+            {
+              "id": "8smMcWJIOp0E6zW4",
+              "who": "cBAbA0n3ZCXVt5Zl",
+              "how": "trigger",
+              "when": 1728266347449
+            },
+            {
+              "id": "RvJa91WymDBAlJd1",
+              "who": "cBAbA0n3ZCXVt5Zl",
+              "how": "trigger",
+              "when": 1728266349245
+            }
+          ]
+        },
+        "BlM5ZbPgqm5O9d1l": {
+          "tokenid": "BlM5ZbPgqm5O9d1l",
+          "triggered": [
+            {
+              "id": "0pQTdSqauHjO7Y2U",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1725839905199
+            }
+          ]
+        },
+        "TT9Tef8rBPiO23ew": {
+          "tokenid": "TT9Tef8rBPiO23ew",
+          "triggered": [
+            {
+              "id": "4ARbO55MIznSpeNK",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727040316169
+            },
+            {
+              "id": "eJl7OZo8kdsBvr9m",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727040330996
+            },
+            {
+              "id": "Dx8b7q37JsH6a7Wq",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727040422605
+            },
+            {
+              "id": "HSUeI1LbUWOl1owv",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727040443489
+            },
+            {
+              "id": "2YwsA1DSp8kX8iSU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727040970515
+            },
+            {
+              "id": "ixM3fAO4snP3p2Cb",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727040990358
+            },
+            {
+              "id": "k3rCbjkqqszQUBD1",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727041183505
+            },
+            {
+              "id": "8jR0Vjm9AIL9vmxI",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727041364249
+            },
+            {
+              "id": "8cs1hcITZGN8nZ80",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727041370635
+            },
+            {
+              "id": "QO0c0CPPUwLzEwaZ",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727041508107
+            },
+            {
+              "id": "azF5ufCe3rVYKd3E",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727041511402
+            },
+            {
+              "id": "4bTIputxx4DHIF2e",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "door",
+              "when": 1727041515925
+            },
+            {
+              "id": "x6B3qhMFPmVN57Dx",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727041835845
+            },
+            {
+              "id": "ckzxddgQFwicjLuy",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727042319820
+            },
+            {
+              "id": "fOyxMoJDYN0F9PJh",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1727043385270
+            },
+            {
+              "id": "KQICA4F9WX1Dr00u",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728265066275
+            },
+            {
+              "id": "NHz6K7VtuKqIooFv",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728265072739
+            },
+            {
+              "id": "fHiN8JvaJkiW39RX",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728265072977
+            }
+          ]
+        },
+        "OI35B5hbZQbpPdoW": {
+          "tokenid": "OI35B5hbZQbpPdoW",
+          "triggered": [
+            {
+              "id": "5jMv3ZnX9oPvLhLS",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1728214043806
+            },
+            {
+              "id": "GBPvXb1c8iB5CDxz",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728226207091
+            },
+            {
+              "id": "RwTwYUG7gxOIKp2A",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728226207672
+            },
+            {
+              "id": "b3DcCZmaWwfnYL5s",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728226334215
+            },
+            {
+              "id": "gwA8RiDeYxBCFj8l",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728226384219
+            },
+            {
+              "id": "2uyvjMhGO7LZuytu",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728226839303
+            },
+            {
+              "id": "Wtg8FObsUCy1nt1n",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728227566589
+            },
+            {
+              "id": "eh9NZ6Tba8TuzZcL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728227642753
+            },
+            {
+              "id": "2aoxOjw2Idt73cpS",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728228077579
+            },
+            {
+              "id": "mX4YdUOdWHGZX5St",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1728228254590
+            },
+            {
+              "id": "cnK8I3iKtutFRh0k",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1728228688473
+            },
+            {
+              "id": "DQlooxJT8tPJmu4J",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728229149652
+            }
+          ]
+        },
+        "6eeODxkyUXlypC24": {
+          "tokenid": "6eeODxkyUXlypC24",
+          "triggered": [
+            {
+              "id": "ix87aNEu271PqiaV",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728266013188
+            },
+            {
+              "id": "tlTGjeyOfK8ouGSk",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728266019618
+            },
+            {
+              "id": "ps7KKMCrytMMSE1P",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1728266019856
+            },
+            {
+              "id": "9AwAvHpY40ScHqd2",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1728266099993
+            }
+          ]
+        },
+        "Wf30NgSfOeLnZUdf": {
+          "tokenid": "Wf30NgSfOeLnZUdf",
+          "triggered": [
+            {
+              "id": "zYbvc8PirncYip8W",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1739591993762
+            },
+            {
+              "id": "7vw9bbQZzuGOGMx7",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739596613739
+            },
+            {
+              "id": "46ZyqZCbWvGXDhlO",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739596614939
+            },
+            {
+              "id": "BIO9A0HRR1NkKYBo",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1739596976240
+            },
+            {
+              "id": "RzjTRtLorITpKU8E",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739596976462
+            },
+            {
+              "id": "J7ITyJJhgOCyJ8Dn",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739597324119
+            },
+            {
+              "id": "YzniITqnamkX9AMN",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739597325852
+            },
+            {
+              "id": "qD99pspcb74R9Fx0",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739599070203
+            },
+            {
+              "id": "RR1j4HxabIJmXTtl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739599070940
+            },
+            {
+              "id": "me0Vv66ihRePGn5x",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739600830921
+            },
+            {
+              "id": "fBJaq3WWtk2Cct8t",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739600831965
+            },
+            {
+              "id": "ywRTj6SfZCHzBMTI",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601184022
+            },
+            {
+              "id": "nKf9SPx4TlBEBUxi",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601185193
+            },
+            {
+              "id": "H3TPKzsbiJLM5aKI",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1739601363870
+            },
+            {
+              "id": "MMxBQAgn3dabQN3r",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601364457
+            },
+            {
+              "id": "A0oMAqW11W3kEAnm",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601519683
+            },
+            {
+              "id": "ka9xRaXVRvolO2NL",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601521072
+            },
+            {
+              "id": "PnfNUZRyGWtXJYL6",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601750635
+            },
+            {
+              "id": "BK3dvwVjTK5Li7Wl",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601752063
+            },
+            {
+              "id": "LaUgLjmaAD8lNht4",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739601984060
+            },
+            {
+              "id": "IsSBlNccGu63eOZb",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739601986087
+            },
+            {
+              "id": "WUxPeGj5mufeTboI",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602192497
+            },
+            {
+              "id": "P9F4KVgSdGb4tFpH",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602192999
+            },
+            {
+              "id": "UOPc691zhG9JtwN5",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602296531
+            },
+            {
+              "id": "RUBmBhZKzk3can42",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602297060
+            },
+            {
+              "id": "hUDm7r0cBtYTqAJ2",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602517410
+            },
+            {
+              "id": "PD8xBMIbX0hTnWwY",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602518095
+            },
+            {
+              "id": "SwAhvgixnthpteeh",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602678603
+            },
+            {
+              "id": "yucYvxb2rHFM2BCA",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602678991
+            },
+            {
+              "id": "PtY5c4LEGKQjKr8Z",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739602796789
+            },
+            {
+              "id": "GjyF2BfWhbha8q3c",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739602797997
+            },
+            {
+              "id": "s2fvA5gQX2bc4gtt",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739691212959
+            },
+            {
+              "id": "Btd0ORbzFaQrLKXS",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739691743988
+            },
+            {
+              "id": "faU5fmDH2YMeUE8c",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "trigger",
+              "when": 1739691902474
+            },
+            {
+              "id": "YVHCdlHn2QfkPQBj",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739691902916
+            },
+            {
+              "id": "L9RyT8L2xmMFbf02",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739692300536
+            },
+            {
+              "id": "oNFkAjqszc2Q2EHS",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739692301092
+            },
+            {
+              "id": "PcX56bPB1TfiF28o",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739692670785
+            },
+            {
+              "id": "wkOzjZmcxrPoGANU",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739692673016
+            },
+            {
+              "id": "NZZwcjM6XUAyy9pw",
+              "who": "sVxF0AzuvK7ZMqXx",
+              "how": "enter",
+              "when": 1739692804542
+            },
+            {
+              "id": "hyplttZaBfhWnXzq",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "enter",
+              "when": 1739692956101
+            },
+            {
+              "id": "iiydfQLpw0wOhPDr",
+              "who": "KtZWaj9WGfZlnt9f",
+              "how": "trigger",
+              "when": 1739693275845
+            }
+          ]
+        }
+      },
+      "name": "DC01DetectAlchemistFireDoorTrap01",
+      "vision": false,
+      "cooldown": null
+    },
+    "exportSource": {
+      "world": "YourWorldName",
+      "system": "gurps",
+      "coreVersion": "12.331",
+      "systemVersion": "0.17.18"
+    }
+  },
+  "texture": {
+    "src": "icons/svg/trap.svg",
+    "tint": "#ffffff",
+    "scaleX": 1,
+    "scaleY": 1,
+    "offsetX": 0,
+    "offsetY": 0,
+    "rotation": 0,
+    "anchorX": 0.5,
+    "anchorY": 0.5,
+    "fit": "fill",
+    "alphaThreshold": 0.75
+  },
+  "restrictions": {
+    "light": false,
+    "weather": false
+  },
+  "elevation": 0,
+  "id": "PK1uy4tCLtYKLbnW",
+  "name": "DetectTrapsAlchemistFire01",
+  "visible": true,
+  "img": "icons/svg/trap.svg",
+  "thumbnail": "icons/svg/trap.svg"
+}
